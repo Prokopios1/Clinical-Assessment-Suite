@@ -7,4 +7,4 @@ runConfig:
   memoryMiB: 512
 env:
   - variable: STORAGE_CONNECTION_STRING
-    secret: "projects/signature-insights/secrets/DATABASE_URL"
+    secret: "projects/pa-clinical-assessment/secrets/DATABASE_URL"

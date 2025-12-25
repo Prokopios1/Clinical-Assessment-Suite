@@ -1,4 +1,7 @@
 {
+    "apphosting": {
+        "backendId": "clinical-suite"
+    },
     "hosting": {
         "public": "public",
         "ignore": [
