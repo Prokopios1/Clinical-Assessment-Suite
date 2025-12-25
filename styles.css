@@ -1,0 +1,40 @@
+/* styles.css */
+.main {
+    background-color: #f8f9fa;
+}
+
+.stButton>button {
+    width: 100%;
+    border-radius: 5px;
+    height: 3em;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.stProgress > div > div > div > div {
+    background-color: #4CAF50;
+}
+
+footer {
+    visibility: hidden;
+}
+
+.custom-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #6c757d;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+    .stMarkdown h1 {
+        font-size: 1.5rem !important;
+    }
+}

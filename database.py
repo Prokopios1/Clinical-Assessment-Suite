@@ -1,0 +1,37 @@
+import firebase_admin
+from firebase_admin import credentials, firestore
+import streamlit as st
+import json
+
+def init_db():
+    if not firebase_admin._apps:
+        try:
+            # Try Streamlit Secrets first
+            if "firebase" in st.secrets:
+                key_dict = json.loads(st.secrets["firebase"]["service_account"])
+                cred = credentials.Certificate(key_dict)
+            else:
+                # Fallback to local file if it exists (for local dev)
+                cred = credentials.Certificate("serviceAccountKey.json")
+            
+            firebase_admin.initialize_app(cred)
+        except Exception as e:
+            st.error(f"Σφάλμα σύνδεσης με τη βάση δεδομένων: {e}")
+            return None
+    return firestore.client()
+
+def save_screening(user_data, results):
+    db = init_db()
+    if db:
+        try:
+            doc_ref = db.collection("screenings").document()
+            doc_ref.set({
+                "user": user_data,
+                "results": results,
+                "timestamp": firestore.SERVER_TIMESTAMP
+            })
+            return True
+        except Exception as e:
+            st.error(f"Σφάλμα κατά την αποθήκευση: {e}")
+            return False
+    return False
