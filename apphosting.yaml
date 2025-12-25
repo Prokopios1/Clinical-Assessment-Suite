@@ -5,6 +5,6 @@ runConfig:
   concurrency: 80
   cpu: 1
   memoryMiB: 512
-env:
-  - variable: STORAGE_CONNECTION_STRING
-    secret: "projects/pa-clinical-assessment/secrets/DATABASE_URL"
+# env:
+#   - variable: STORAGE_CONNECTION_STRING
+#     secret: "projects/pa-clinical-assessment/secrets/DATABASE_URL"
