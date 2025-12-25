@@ -6,7 +6,7 @@ import datetime
 
 # --- CONFIGURATION ---
 st.set_page_config(
-    page_title="Clinical Screening App",
+    page_title="Clinical Assessment Suite",
     page_icon="🧠",
     layout="centered",
     initial_sidebar_state="collapsed",
@@ -21,8 +21,10 @@ if "user_data" not in st.session_state:
     st.session_state.user_data = None
 if "test_results" not in st.session_state:
     st.session_state.test_results = {}
-if "current_scale" not in st.session_state:
-    st.session_state.current_scale = "Registration"
+if "current_view" not in st.session_state:
+    st.session_state.current_view = "Home"  # Options: Home, Registration, Test, Summary
+if "active_test" not in st.session_state:
+    st.session_state.active_test = None
 
 # --- HELPER FUNCTIONS ---
 def save_results(scale_id, score, details=None):
@@ -38,18 +40,48 @@ def mock_data():
         "email": "test@example.com",
         "gdpr": True
     }
+    st.session_state.current_view = "Home"
     st.rerun()
 
 # --- UI COMPONENTS ---
+
+def home_page():
+    st.title("Καλωσορίσατε στην Πλατφόρμα Κλινικής Αξιολόγησης")
+    st.markdown(f"""
+    <div style="text-align: justify; line-height: 1.6; margin-bottom: 2rem;">
+    Η παρούσα εφαρμογή αποτελεί ένα ολοκληρωμένο ψηφιακό εργαλείο κλινικής διαλογής, σχεδιασμένο για την υποστήριξη της ψυχικής υγείας και της αυτογνωσίας. Μέσω επιστημονικά τεκμηριωμένων ερωτηματολογίων (PHQ-9, GAD-7, PID-5-BF, MSI-BPD, PQ-B), ο χρήστης έχει τη δυνατότητα να αξιολογήσει το επίπεδο συμπτωμάτων που σχετίζονται με την κατάθλιψη, το άγχος, τις διαταραχές προσωπικότητας και τον κίνδυνο ψύχωσης. Η εφαρμογή έχει αναπτυχθεί με γνώμονα την εγκυρότητα και την εμπιστευτικότητα των δεδομένων, χρησιμοποιώντας το Firebase για την ασφαλή αποθήκευση των αποτελεσμάτων. 
+    <br><br>
+    Τα ερωτηματολόγια ακολουθούν τα διεθνή κλινικά πρότυπα και τις οδηγίες του DSM-5. Είναι σημαντικό να σημειωθεί ότι τα αποτελέσματα των τεστ παρέχουν μια ένδειξη της τρέχουσας κατάστασης και δεν υποκαθιστούν την επαγγελματική κλινική διάγνωση από ψυχίατρο ή ψυχολόγο.
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.subheader("Διαθέσιμα Τεστ")
+    
+    # Test Selection Cards
+    for scale_id, scale in SCALES.items():
+        with st.container():
+            st.markdown(f"""
+            <div class="test-card">
+                <h3>{scale['name']}</h3>
+                <p>{scale['description']}</p>
+            </div>
+            """, unsafe_allow_html=True)
+            if st.button(f"Έναρξη {scale_id}", key=f"btn_{scale_id}", use_container_width=True):
+                if st.session_state.user_data is None:
+                    st.session_state.current_view = "Registration"
+                else:
+                    st.session_state.current_view = "Test"
+                st.session_state.active_test = scale_id
+                st.rerun()
 
 def registration_page():
     st.title("Εγγραφή Χρήστη")
     with st.form("reg_form"):
         name = st.text_input("Ονοματεπώνυμο")
         email = st.text_input("Email")
-        gdpr = st.checkbox("Συμφωνώ με την επεξεργασία των δεδομένων μου για κλινικούς σκοπούς (GDPR)")
+        gdpr = st.checkbox("Συμφωνώ με την επεξεργασία των δεδομένων μου (GDPR)")
         
-        submit = st.form_submit_button("Έναρξη Αξιολόγησης")
+        submit = st.form_submit_button("Συνέχεια")
         if submit:
             if not name or not email:
                 st.error("Παρακαλώ συμπληρώστε όλα τα πεδία.")
@@ -57,10 +89,15 @@ def registration_page():
                 st.warning("Πρέπει να συμφωνήσετε με τους όρους GDPR.")
             else:
                 st.session_state.user_data = {"name": name, "email": email, "gdpr": gdpr}
-                st.session_state.current_scale = "PHQ-9"
+                st.session_state.current_view = "Test"
                 st.rerun()
+    
+    if st.button("⬅ Επιστροφή στην Αρχική"):
+        st.session_state.current_view = "Home"
+        st.rerun()
 
-def scale_page(scale_id):
+def test_page():
+    scale_id = st.session_state.active_test
     scale = SCALES[scale_id]
     st.title(scale["name"])
     
@@ -68,92 +105,106 @@ def scale_page(scale_id):
     
     with st.form(f"form_{scale_id}"):
         for i, item in enumerate(scale["items"]):
-            if scale["scoring"] == "count_yes" or scale_id == "MSI-BPD":
-                res = st.radio(item, options=scale["options"], horizontal=True, key=f"{scale_id}_{i}")
-                responses.append(1 if res == "Ναι" else 0)
+            st.write(item)
+            if scale["scoring"] in ["weighted_sum", "mean_per_domain_weighted"]:
+                # 1-5 Radio Scale
+                res = st.radio(
+                    f"Ερώτηση {i+1}",
+                    options=scale["options"],
+                    format_func=lambda x: f"{x} - {scale['labels'][x]}",
+                    horizontal=True,
+                    key=f"{scale_id}_{i}",
+                    label_visibility="collapsed"
+                )
+                responses.append(res)
             else:
-                res = st.select_slider(item, options=scale["options"], key=f"{scale_id}_{i}")
-                responses.append(scale["options"].index(res))
+                # Binary scale (PQ-B, MSI-BPD)
+                res = st.radio(
+                    f"Ερώτηση {i+1}",
+                    options=scale["options"],
+                    horizontal=True,
+                    key=f"{scale_id}_{i}",
+                    label_visibility="collapsed"
+                )
+                responses.append(res)
+            st.divider()
         
         submit = st.form_submit_button("Υποβολή")
         
         if submit:
-            if scale["scoring"] == "sum":
-                score = sum(responses)
+            score = 0
+            if scale["scoring"] == "weighted_sum":
+                score = sum(scale["weights"][r] for r in responses)
             elif scale["scoring"] == "count_yes":
-                score = sum(responses)
-            elif scale["scoring"] == "mean_per_domain":
-                # Basic sum for PID-5-BF if domain mapping is complex for this view
-                score = sum(responses) / len(responses)
+                score = sum(1 for r in responses if r == "Ναι")
+            elif scale["scoring"] == "sum":
+                score = sum(1 for r in responses if r == "Ναι")
+            elif scale["scoring"] == "mean_per_domain_weighted":
+                # Average of weighted scores
+                score = sum(scale["weights"][r] for r in responses) / len(responses)
             
             save_results(scale_id, score)
-            
-            # Navigate to next scale
-            scale_order = list(SCALES.keys())
-            current_index = scale_order.index(scale_id)
-            if current_index < len(scale_order) - 1:
-                st.session_state.current_scale = scale_order[current_index + 1]
-            else:
-                st.session_state.current_scale = "Summary"
+            st.session_state.current_view = "Summary"
             st.rerun()
 
 def summary_page():
-    st.title("Σύνοψη Αποτελεσμάτων")
-    st.write(f"Χρήστης: {st.session_state.user_data['name']}")
+    st.title("Αποτελέσματα Αξιολόγησης")
+    scale_id = st.session_state.active_test
+    scale = SCALES[scale_id]
+    data = st.session_state.test_results[scale_id]
+    score = data["score"]
+
+    st.subheader(scale["name"])
     
-    for scale_id, data in st.session_state.test_results.items():
-        scale = SCALES[scale_id]
-        score = data["score"]
-        st.subheader(scale["name"])
+    if scale["scoring"] in ["weighted_sum", "mean_per_domain_weighted"]:
+        max_possible = len(scale["items"]) * 3 if scale["scoring"] == "weighted_sum" else 3.0
+        st.progress(min(score / max_possible, 1.0))
+        st.write(f"Σκορ: **{score:.1f}**")
         
-        if scale["scoring"] == "sum":
-            max_val = (len(scale["items"]) * (len(scale["options"]) - 1))
-            st.progress(score / max_val)
-            st.write(f"Σκορ: {score} / {max_val}")
-            
-            # Interpretation
-            if "thresholds" in scale:
-                for low, high, label in scale["thresholds"]:
-                    if low <= score <= high:
-                        st.info(f"Ερμηνεία: {label}")
-            elif "threshold" in scale:
-                 if score >= scale["threshold"]:
-                     st.warning(scale.get("label", "Υψηλή τιμή"))
-        
-        elif scale["scoring"] == "count_yes":
-             st.progress(score / len(scale["items"]))
-             st.write(f"Σκορ (Ναι): {score} / {len(scale['items'])}")
-             if score >= scale.get("threshold", 0):
-                 st.error(scale.get("high_risk_label", "Υψηλός κίνδυνος"))
-        
-        elif scale["scoring"] == "mean_per_domain":
-             st.write(f"Μέσο Σκορ: {score:.2f}")
-             if score >= scale.get("threshold", 2.0):
-                 st.warning(f"Υπερβαίνει το όριο ({scale['threshold']})")
+        # Interpretation
+        if "thresholds" in scale:
+            for low, high, label in scale["thresholds"]:
+                if low <= score <= high:
+                    st.info(f"Ερμηνεία: {label}")
+        elif "threshold" in scale:
+             if score >= scale["threshold"]:
+                 st.warning(f"Προσοχή: Υπερβαίνει το κλινικό όριο ({scale['threshold']})")
+    
+    else:
+         st.progress(score / len(scale["items"]))
+         st.write(f"Σκορ (Ναι): **{score}** / {len(scale['items'])}")
+         if score >= scale.get("threshold", 0):
+             st.error(scale.get("high_risk_label", scale.get("label", "Υψηλός κίνδυνος")))
 
-    if st.button("Αποθήκευση Αποτελεσμάτων"):
-        if save_screening(st.session_state.user_data, st.session_state.test_results):
-            st.success("Τα αποτελέσματα αποθηκεύτηκαν επιτυχώς!")
-        else:
-            st.info("Η αποθήκευση δεν είναι διαθέσιμη (προσθήκη κλειδιών Firebase).")
-
-    if st.button("Νέα Αξιολόγηση"):
-        st.session_state.user_data = None
-        st.session_state.test_results = {}
-        st.session_state.current_scale = "Registration"
-        st.rerun()
+    col1, col2 = st.columns(2)
+    with col1:
+        if st.button("Αποθήκευση στο Firebase"):
+            if save_screening(st.session_state.user_data, st.session_state.test_results):
+                st.success("Αποθηκεύτηκε!")
+            else:
+                st.info("Firebase μη συνδεδεμένο.")
+    with col2:
+        if st.button("Νέο Τεστ"):
+            st.session_state.current_view = "Home"
+            st.rerun()
 
 # --- MAIN LOGIC ---
 
-if st.session_state.user_data is None:
-    registration_page()
-    if st.button("Mock Data (Δοκιμαστικά Δεδομένα)"):
+if st.session_state.current_view == "Home":
+    home_page()
+    if st.button("Mock Data (Testing)", type="secondary"):
         mock_data()
-else:
-    if st.session_state.current_scale in SCALES:
-        scale_page(st.session_state.current_scale)
-    else:
-        summary_page()
+elif st.session_state.current_view == "Registration":
+    registration_page()
+elif st.session_state.current_view == "Test":
+    test_page()
+elif st.session_state.current_view == "Summary":
+    summary_page()
 
 # Footer
-st.markdown('<div class="custom-footer">Copyright © 2025 Prokopios Andrianos</div>', unsafe_allow_html=True)
+st.markdown(f'''
+<div class="custom-footer">
+    Copyright © 2025 Prokopios Andrianos<br>
+    Clinical Assessment Suite | Created with Support for Mental Health
+</div>
+''', unsafe_allow_html=True)
