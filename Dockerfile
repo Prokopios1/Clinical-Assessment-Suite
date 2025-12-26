@@ -15,8 +15,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+# Cloud Run expects the container to listen on $PORT
+ENV PORT=8080
 EXPOSE 8080
 
-HEALTHCHECK CMD curl --fail http://localhost:8080/_stcore/health
+HEALTHCHECK CMD curl --fail http://localhost:${PORT}/_stcore/health
 
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]
+ENTRYPOINT ["sh", "-c", "streamlit run app.py --server.port=${PORT} --server.address=0.0.0.0"]
