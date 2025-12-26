@@ -35,3 +35,22 @@ def save_screening(user_data, results):
             st.error(f"Σφάλμα κατά την αποθήκευση: {e}")
             return False
     return False
+
+def get_user_screenings(email):
+    """Retrieve all screening results for a specific user email."""
+    db = init_db()
+    if not db:
+        return []
+    
+    try:
+        docs = db.collection("screenings")\
+                 .where("user.email", "==", email)\
+                 .stream()
+        
+        results = [doc.to_dict() for doc in docs]
+        # Sort in memory to avoid composite index requirement
+        results.sort(key=lambda x: x.get("timestamp", ""), reverse=True)
+        return results
+    except Exception as e:
+        st.error(f"Σφάλμα κατά την ανάκτηση ιστορικού: {e}")
+        return []

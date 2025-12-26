@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from scales import SCALES
-from database import save_screening
+from database import save_screening, get_user_screenings
 import datetime
 
 # --- CONFIGURATION ---
@@ -22,7 +22,7 @@ if "user_data" not in st.session_state:
 if "test_results" not in st.session_state:
     st.session_state.test_results = {}
 if "current_view" not in st.session_state:
-    st.session_state.current_view = "Home"  # Options: Home, Registration, Test, Summary
+    st.session_state.current_view = "Home"  # Options: Home, Registration, Test, Summary, History
 if "active_test" not in st.session_state:
     st.session_state.active_test = None
 
@@ -147,6 +147,43 @@ def test_page():
             st.session_state.current_view = "Summary"
             st.rerun()
 
+def history_page():
+    st.title("Ιστορικό Αξιολογήσεων")
+    
+    if not st.session_state.user_data or "email" not in st.session_state.user_data:
+        st.warning("Παρακαλώ συνδεθείτε/εγγραφείτε για να δείτε το ιστορικό σας.")
+        if st.button("Πίσω"):
+            st.session_state.current_view = "Home"
+            st.rerun()
+        return
+
+    email = st.session_state.user_data["email"]
+    with st.spinner("Φόρτωση ιστορικού..."):
+        results = get_user_screenings(email)
+    
+    if not results:
+        st.info("Δεν βρέθηκαν προηγούμενες αξιολογήσεις.")
+    else:
+        for res in results:
+            timestamp = res.get("timestamp")
+            # Handle Firestore timestamp or string
+            if hasattr(timestamp, 'date'):
+                date_str = timestamp.strftime("%d/%m/%Y %H:%M")
+            else:
+                date_str = str(timestamp)
+                
+            with st.expander(f"{date_str}"):
+                # Based on how we save data structure:
+                # res['results'] is a dict of scale_id -> {score, details, timestamp...}
+                saved_results = res.get("results", {})
+                for scale_id, data in saved_results.items():
+                    scale_name = SCALES.get(scale_id, {}).get("name", scale_id)
+                    st.markdown(f"**{scale_name}**: {data['score']}")
+                    
+    if st.button("⬅ Επιστροφή"):
+        st.session_state.current_view = "Home"
+        st.rerun()
+
 def summary_page():
     st.title("Αποτελέσματα Αξιολόγησης")
     scale_id = st.session_state.active_test
@@ -184,6 +221,9 @@ def summary_page():
             else:
                 st.info("Firebase μη συνδεδεμένο.")
     with col2:
+        if st.button("Προβολή Ιστορικού"):
+            st.session_state.current_view = "History"
+            st.rerun()
         if st.button("Νέο Τεστ"):
             st.session_state.current_view = "Home"
             st.rerun()
@@ -200,6 +240,8 @@ elif st.session_state.current_view == "Test":
     test_page()
 elif st.session_state.current_view == "Summary":
     summary_page()
+elif st.session_state.current_view == "History":
+    history_page()
 
 # Footer
 st.markdown(f'''
