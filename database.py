@@ -3,6 +3,8 @@ from firebase_admin import credentials, firestore
 import streamlit as st
 import json
 
+import os
+
 def init_db():
     if not firebase_admin._apps:
         try:
@@ -10,11 +12,15 @@ def init_db():
             if "firebase" in st.secrets:
                 key_dict = json.loads(st.secrets["firebase"]["service_account"])
                 cred = credentials.Certificate(key_dict)
-            else:
-                # Fallback to local file if it exists (for local dev)
+                firebase_admin.initialize_app(cred)
+            # Fallback to local file if it exists (for local dev)
+            elif os.path.exists("serviceAccountKey.json"):
                 cred = credentials.Certificate("serviceAccountKey.json")
-            
-            firebase_admin.initialize_app(cred)
+                firebase_admin.initialize_app(cred)
+            else:
+                # Use Application Default Credentials (ADC) for Cloud
+                firebase_admin.initialize_app()
+                
         except Exception as e:
             st.error(f"Σφάλμα σύνδεσης με τη βάση δεδομένων: {e}")
             return None
