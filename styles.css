@@ -2,17 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@300;400;600&display=swap');
 
 :root {
-    --primary-color: #2D3436;
-    --accent-color: #0984E3;
-    --bg-color: #FFFFFF;
-    --text-color: #2D3436;
-    --muted-color: #636E72;
-    --card-bg: #F9F9F9;
+    --primary-color: #73956F;
+    --accent-color: #7BAE7F;
+    --bg-color: #ffffff;
+    --text-color: #454851;
+    --muted-color: #6b6f7a;
+    --card-bg: #FCEFF9;
 }
 
 .main {
     background-color: var(--bg-color);
     font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+
+p,
+div,
+span,
+label {
+    color: var(--text-color) !important;
 }
 
 h1,
@@ -28,7 +36,7 @@ h3 {
     border-radius: 12px;
     height: 3.5em;
     background-color: var(--primary-color);
-    color: white;
+    color: #d4efc5 !important;
     font-weight: 600;
     border: none;
     transition: all 0.3s ease;
@@ -36,41 +44,52 @@ h3 {
 }
 
 .stButton>button:hover {
-    background-color: var(--accent-color);
+    background-color: #5a7556;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(115, 149, 111, 0.3);
+    color: #d4efc5 !important;
 }
 
 /* Card Styling for Home Page */
 .test-card {
     background-color: var(--card-bg);
     border-radius: 16px;
-    padding: 24px;
-    margin-bottom: 16px;
-    border: 1px solid #EAEAEA;
+    padding: 32px 24px;
+    margin-bottom: 20px;
+    border: 2px solid #EAEAEA;
     transition: all 0.3s ease;
     cursor: pointer;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .test-card:hover {
     border-color: var(--accent-color);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
 }
 
 .test-card h3 {
     margin-top: 0;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    color: var(--primary-color) !important;
 }
 
 .test-card p {
-    color: var(--muted-color);
+    color: var(--muted-color) !important;
     font-size: 0.9rem;
-    margin-bottom: 12px;
+    margin-bottom: 0;
 }
+
 
 /* Radio Button Styling */
 div[data-baseweb="radio"] {
     gap: 12px;
+    display: flex;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
 }
 
 label[data-baseweb="radio"] {
@@ -79,11 +98,13 @@ label[data-baseweb="radio"] {
     border-radius: 8px;
     border: 1px solid transparent;
     transition: all 0.2s;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 label[data-baseweb="radio"]:has(input:checked) {
-    border-color: var(--accent-color);
-    background: #EBF5FF;
+    border-color: var(--primary-color);
+    background: #cce5ff;
 }
 
 /* Progress bar color */

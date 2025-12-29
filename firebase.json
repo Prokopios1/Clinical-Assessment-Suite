@@ -1,13 +1,19 @@
 {
-    "apphosting": {
-        "backendId": "clinical-suite"
-    },
     "hosting": {
         "public": "public",
         "ignore": [
             "firebase.json",
             "**/.*",
             "**/node_modules/**"
+        ],
+        "rewrites": [
+            {
+                "source": "**",
+                "run": {
+                    "serviceId": "clinical-suite",
+                    "region": "us-central1"
+                }
+            }
         ]
     }
 }
