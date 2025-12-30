@@ -8,21 +8,25 @@ import os
 def init_db():
     if not firebase_admin._apps:
         try:
-            # Try Streamlit Secrets first
-            # Note: checking if "firebase" in st.secrets handles both local .streamlit/secrets.toml
-            # and cloud secrets.
-            if "firebase" in st.secrets:
+            # 1. Try FIREBASE environment variable (for App Hosting deployment)
+            if "FIREBASE" in os.environ:
+                # print("Loading from FIREBASE env var...") # Debug
+                key_dict = json.loads(os.environ["FIREBASE"])
+                cred = credentials.Certificate(key_dict)
+                firebase_admin.initialize_app(cred)
+            # 2. Try Streamlit Secrets (for local dev with .streamlit/secrets.toml)
+            elif "firebase" in st.secrets:
                 # print("Loading from Streamlit secrets...") # Debug
                 key_dict = json.loads(st.secrets["firebase"]["service_account"])
                 cred = credentials.Certificate(key_dict)
                 firebase_admin.initialize_app(cred)
-            # Fallback to local file if it exists (for local dev)
+            # 3. Fallback to local file if it exists (legacy local dev)
             elif os.path.exists("serviceAccountKey.json"):
                 # print("Loading from local serviceAccountKey.json...") # Debug
                 cred = credentials.Certificate("serviceAccountKey.json")
                 firebase_admin.initialize_app(cred)
             else:
-                # Use Application Default Credentials (ADC) for Cloud
+                # 4. Use Application Default Credentials (ADC) as last resort
                 # print("Loading with ADC...") # Debug
                 firebase_admin.initialize_app()
                 
@@ -33,6 +37,7 @@ def init_db():
             return None
             
     return firestore.client()
+
 
 def save_screening(user_data, results):
     db = init_db()
