@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/activity_signup.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/item_question.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/item_question.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/item_patient.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/item_patient.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/activity_about_assessment.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/activity_about_assessment.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/item_scale_card.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/item_scale_card.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/activity_registration.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/activity_registration.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/activity_main.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/activity_clinician_placeholder.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/activity_clinician_placeholder.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/activity_dashboard.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/activity_test.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/activity_test.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/activity_history.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/activity_history.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/activity_clinician_login.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/activity_clinician_login.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/activity_home.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/activity_patient_detail.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/activity_patient_detail.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/item_history_attempt.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/item_history_attempt.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/activity_summary.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/activity_summary.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/activity_patient_login.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/activity_patient_login.xml"
+    },
+    {
+        "merged": "com.clinical.assessment.app-mergeReleaseResources-48:/layout/dialog_qr_invite.xml",
+        "source": "com.clinical.assessment.app-main-50:/layout/dialog_qr_invite.xml"
+    }
+]

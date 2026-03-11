@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clinical Assessment Suite</string>
+    <string name="patient_mode">Ασθενής</string>
+    <string name="clinician_mode">Κλινικός</string>
+    <string name="welcome">Καλωσορίσατε στην Πλατφόρμα Κλινικής Αξιολόγησης</string>
+    <string name="register">Εγγραφή</string>
+    <string name="login">Σύνδεση</string>
+    <string name="name">Ονοματεπώνυμο</string>
+    <string name="email">Email</string>
+    <string name="gdpr_consent">Συμφωνώ με την επεξεργασία των δεδομένων μου (GDPR)</string>
+    <string name="continue_btn">Συνέχεια</string>
+    <string name="submit">Υποβολή</string>
+    <string name="save">Αποθήκευση</string>
+    <string name="back">Επιστροφή</string>
+    <string name="history">Ιστορικό</string>
+    <string name="new_test">Νέα Αξιολόγηση</string>
+    <string name="start">Έναρξη</string>
+    <string name="fill_mock_data">Συμπλήρωση Δοκιμαστικών Δεδομένων</string>
+    <string name="mock_data_success">Τα δοκιμαστικά δεδομένα προστέθηκαν επιτυχώς!</string>
+    <string name="dashboard_title">Πίνακας Ελέγχου Θεραπευτή</string>
+    <string name="patient_list_title">Λίστα Ασθενών</string>
+    <string name="search_hint">Αναζήτηση με όνομα ή ID...</string>
+    <string name="score_label">Σκορ: %s</string>
+    <string name="interpretation_label">Ερμηνεία: %s</string>
+    <string name="saved_msg">Αποθηκεύτηκε!</string>
+    <string name="save_error_msg">Σφάλμα αποθήκευσης</string>
+    <string name="user_registration_title">Εγγραφή Χρήστη</string>
+    <string name="assessment_results_title">Αποτελέσματα Αξιολόγησης</string>
+    <string name="available_tests_title">Διαθέσιμες Αξιολογήσεις</string>
+    <string name="error_fill_all_fields">Παρακαλώ συμπληρώστε όλα τα πεδία</string>
+    <string name="error_gdpr_required">Πρέπει να συμφωνήσετε με τους όρους GDPR</string>
+    <string name="error_answer_all">Παρακαλώ απαντήστε σε όλες τις ερωτήσεις</string>
+    <string name="error_register_first">Παρακαλώ εγγραφείτε πρώτα κάνοντας ένα τεστ.</string>
+    <string name="error_invalid_qr">Μη έγκυρο QR Code</string>
+    <string name="error_cancelled">Ακυρώθηκε</string>
+    <string name="logout">Αποσύνδεση</string>
+    <string name="logout_confirm">Είστε σίγουροι ότι θέλετε να αποσυνδεθείτε;</string>
+
+    <string name="password_hint">PIN / Κωδικός</string>
+    <string name="score_history_last_year">Ιστορικό Σκορ - Τελευταίο Έτος</string>
+
+    <!-- New Feature Strings -->
+    <string name="clinician_mode_superuser">Θεραπευτής : Υπερχρήστης</string>
+    <string name="invite_patient">Πρόσκληση Ασθενή (QR)</string>
+    <string name="scan_qr_to_connect">Κωδικός QR</string>
+    <string name="connect_therapist_title">Σύνδεση με Θεραπευτή</string>
+    <string name="connect_success">Επιτυχής σύνδεση με θεραπευτή!</string>
+    <string name="connect_fail">Αποτυχία σύνδεσης. Μη έγκυρο QR.</string>
+    <string name="score_history_title">Η Πρόοδός μου</string>
+    <string name="interpretation_title">Ερμηνεία</string>
+    <string name="data_processing_title">Πρόοδος Ασθενή</string>
+    <string name="no_linked_patients">Δεν υπάρχουν συνδεδεμένοι ασθενείς. Χρησιμοποιήστε το κουμπί Πρόσκλησης.</string>
+    <string name="scan_instruction">Σαρώστε τον κωδικό QR στην οθόνη του θεραπευτή σας</string>
+
+    <!-- Risk Levels -->
+    <string name="risk_severe">Σοβαρός</string>
+    <string name="risk_high">Υψηλός Κίνδυνος</string>
+    <string name="risk_moderate">Μέτριος</string>
+    <string name="risk_low">Χαμηλός</string>
+    <string name="risk_unknown">Άγνωστος</string>
+    <string name="risk_completed">Ολοκληρωμένο</string>
+
+    <!-- PHQ-9 -->
+    <string name="phq9_title">Κλίμακα Κατάθλιψης (PHQ-9)</string>
+    <string name="phq9_desc">Αξιολόγηση συμπτωμάτων κατάθλιψης</string>
+    <string-array name="phq9_items">
+        <item>Λίγο ενδιαφέρον ή ευχαρίστηση στις δραστηριότητες</item>
+        <item>Αίσθημα στεναχώριας, κατάθλιψης ή απελπισίας</item>
+        <item>Πρόβλημα στον ύπνο (δυσκολία να κοιμηθείτε, διακοπτόμενος ύπνος ή υπερβολικός ύπνος)</item>
+        <item>Αίσθημα κόπωσης ή έλλειψης ενέργειας</item>
+        <item>Μειωμένη όρεξη ή υπερφαγία</item>
+        <item>Αίσθημα αποτυχίας ή ότι απογοητεύσατε τον εαυτό σας ή την οικογένειά σας</item>
+        <item>Δυσκολία συγκέντρωσης σε πράγματα, όπως το διάβασμα εφημερίδας ή η παρακολούθηση τηλεόρασης</item>
+        <item>Κινητική επιβράδυνση ή νευρικότητα</item>
+        <item>Σκέψεις ότι θα ήταν καλύτερα να είχατε πεθάνει ή σκέψεις αυτοτραυματισμού</item>
+    </string-array>
+    <string-array name="phq9_labels">
+        <item>Καθόλου</item>
+        <item>Λίγο</item>
+        <item>Μέτρια</item>
+        <item>Πολύ</item>
+        <item>Πάρα Πολύ</item>
+    </string-array>
+
+    <!-- GAD-7 -->
+    <string name="gad7_title">Κλίμακα Άγχους (GAD-7)</string>
+    <string name="gad7_desc">Αξιολόγηση γενικευμένου άγχους</string>
+    <string-array name="gad7_items">
+        <item>Νιώθετε νευρικότητα, άγχος ή ένταση;</item>
+        <item>Αδυναμία ελέγχου ή διακοπής της ανησυχίας;</item>
+        <item>Υπερβολική ανησυχία για διάφορα πράγματα;</item>
+        <item>Δυσκολία χαλάρωσης;</item>
+        <item>Ανησυχία τόσο έντονη που είναι δύσκολο να μείνετε ήρεμος-η;</item>
+        <item>Εκνευρισμός ή ευερεθιστότητα;</item>
+        <item>Φόβος ότι κάτι κακό μπορεί να συμβεί;</item>
+    </string-array>
+    <!-- GAD-7 shares labels with PHQ-9 mostly but let's define separate if needed or reuse logic -->
+
+    <!-- PID-5-BF -->
+    <string name="pid5bf_title">Καταγραφή Προσωπικότητας (PID-5-BF - Σύντομη)</string>
+    <string name="pid5bf_desc">Σύντομη αξιολόγηση 25 στοιχείων για χαρακτηριστικά προσωπικότητας</string>
+    <string-array name="pid5bf_items">
+        <item>1. Οι άνθρωποι με θεωρούν περίεργο ή αλλόκοτο.</item>
+        <item>2. Συχνά νιώθω κενός.</item>
+        <item>3. Συχνά κάνω πράγματα χωρίς να σκέφτομαι τις συνέπειες.</item>
+        <item>4. Συχνά χάνω την ψυχραιμία μου, ακόμα και για μικροπράγματα.</item>
+        <item>5. Συχνά προσποιούμαι ότι είμαι κάποιος άλλος για να πετύχω αυτό που θέλω.</item>
+        <item>6. Συχνά νιώθω ότι οι άνθρωποι είναι εναντίον μου.</item>
+        <item>7. Συχνά νιώθω ότι ο κόσμος είναι ένα επικίνδυνο μέρος.</item>
+        <item>8. Συχνά νιώθω ότι δεν αξίζω τίποτα.</item>
+        <item>9. Συχνά λέω ψέματα για να αποφύγω προβλήματα.</item>
+        <item>10. Συχνά νιώθω ότι δεν μπορώ να ελέγξω τα συναισθήματά μου.</item>
+        <item>11. Συχνά νιώθω ότι οι άλλοι με εκμεταλλεύονται.</item>
+        <item>12. Συχνά νιώθω ότι δεν έχω κανέναν να με στηρίξει.</item>
+        <item>13. Συχνά κάνω επικίνδυνα πράγματα μόνο και μόνο για την περιπέτεια.</item>
+        <item>14. Συχνά νιώθω ότι οι άνθρωποι με κρίνουν αρνητικά.</item>
+        <item>15. Συχνά νιώθω ότι η ζωή μου δεν έχει νόημα.</item>
+        <item>16. Συχνά δυσκολεύομαι να εμπιστευτώ τους άλλους.</item>
+        <item>17. Συχνά νιώθω ότι οι άλλοι είναι καλύτεροι από μένα.</item>
+        <item>18. Συχνά νιώθω ότι δεν ανήκω πουθενά.</item>
+        <item>19. Συχνά κάνω πράγματα που οι άλλοι θεωρούν ανεύθυνα.</item>
+        <item>20. Συχνά νιώθω ότι οι άλλοι με παραμελούν.</item>
+        <item>21. Συχνά νιώθω ότι δεν μπορώ να τα βγάλω πέρα με τις υποχρεώσεις μου.</item>
+        <item>22. Συχνά νιώθω ότι οι άλλοι είναι πιο ευτυχισμένοι από μένα.</item>
+        <item>23. Συχνά νιώθω ότι δεν έχω μέλλον.</item>
+        <item>24. Συχνά νιώθω ότι οι άλλοι δεν με καταλαβαίνουν.</item>
+        <item>25. Συχνά νιώθω ότι δεν μπορώ να βρω την ησυχία μου.</item>
+    </string-array>
+
+    <!-- MSI-BPD -->
+    <string name="msibpd_title">Διαγνωστικό Οριακής Προσωπικότητας (MSI-BPD)</string>
+    <string name="msibpd_desc">Αξιολόγηση για την Οριακή Διαταραχή Προσωπικότητας</string>
+    <string-array name="msibpd_items">
+        <item>1. Είχατε ποτέ σχέσεις που ήταν έντονες και ασταθείς;</item>
+        <item>2. Κάνατε ποτέ πράγματα που ήταν επικίνδυνα για εσάς;</item>
+        <item>3. Είχατε ποτέ έντονες μεταπτώσεις στη διάθεση;</item>
+        <item>4. Είχατε ποτέ έντονες εκρήξεις θυμού;</item>
+        <item>5. Νιώσατε ποτέ ότι οι άλλοι σας εγκαταλείπουν;</item>
+        <item>6. Είχατε ποτέ αμφιβολίες για το ποιος είστε;</item>
+        <item>7. Κάνατε ποτέ απόπειρα αυτοκτονίας ή αυτοτραυματισμού;</item>
+        <item>8. Νιώθετε συχνά ένα αίσθημα κενού;</item>
+        <item>9. Είχατε ποτέ περιόδους καχυποψίας ή αποσύνδεσης;</item>
+        <item>10. Νιώθετε συχνά ότι η ζωή σας δεν έχει σταθερότητα;</item>
+    </string-array>
+    <string-array name="yes_no_options">
+        <item>Όχι</item>
+        <item>Ναι</item>
+    </string-array>
+
+    <!-- PQ-B -->
+    <string name="pqb_title">Αξιολόγηση Κινδύνου Ψύχωσης (PQ-B)</string>
+    <string name="pqb_desc">Ανίχνευση πρώιμων σημείων ψύχωσης</string>
+    <string-array name="pqb_items">
+        <item>1. Βλέπετε πράγματα που οι άλλοι δεν βλέπουν;</item>
+        <item>2. Ακούτε ήχους ή ψιθύρους που οι άλλοι δεν ακούν;</item>
+        <item>3. Νιώθετε ότι το μυαλό σας σάς παίζει παιχνίδια;</item>
+        <item>4. Μυρίζετε ή γεύεστε πράγματα που οι άλλοι όχι;</item>
+        <item>5. Πιστεύετε ότι η τηλεόραση στέλνει μηνύματα για εσάς;</item>
+        <item>6. Νιώθετε ότι οι σκέψεις σας ελέγχονται από άλλους;</item>
+        <item>7. Νιώθετε ότι σας παρακολουθούν;</item>
+        <item>8. Έχετε δυνάμεις που οι άλλοι δεν έχουν;</item>
+        <item>9. Οι σκέψεις σας είναι τόσο δυνατές που τις ακούτε;</item>
+        <item>10. Νιώθετε περίεργα για το σώμα σας;</item>
+        <item>11. Δυσκολεύεστε να καταλάβετε τι είναι πραγματικό;</item>
+        <item>12. Νιώθετε ότι οι άλλοι διαβάζουν τη σκέψη σας;</item>
+        <item>13. Έχετε ασυνήθιστες θρησκευτικές εμπειρίες;</item>
+        <item>14. Νιώθετε ότι οι συμπτώσεις έχουν κρυφό νόημα;</item>
+        <item>15. Φοβάστε ότι οι άνθρωποι θέλουν να σας βλάψουν;</item>
+        <item>16. Νιώθετε ότι ο κόσμος είναι ψεύτικος;</item>
+        <item>17. Αισθάνεστε αποκομμένος από τον εαυτό σας;</item>
+        <item>18. Έχετε δει λάμψεις ή σκιές;</item>
+        <item>19. Ακούτε το όνομά σας ενώ δεν υπάρχει κανείς;</item>
+        <item>20. Νιώθετε ότι έχετε μια αποστολή που οι άλλοι δεν καταλαβαίνουν;</item>
+        <item>21. Δυσκολεύεστε να επικοινωνήσετε τις σκέψεις σας;</item>
+    </string-array>
+
+</resources>

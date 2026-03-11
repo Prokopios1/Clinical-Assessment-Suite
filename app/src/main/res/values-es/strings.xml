@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clinical Assessment Suite</string>
+    <string name="patient_mode">Usuario</string>
+    <string name="clinician_mode">Terapeuta</string>
+    <string name="welcome">Bienvenido a la Plataforma de Evaluación Clínica</string>
+    <string name="register">Registrarse</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="name">Nombre Completo</string>
+    <string name="email">Email</string>
+    <string name="gdpr_consent">Acepto el procesamiento de datos (GDPR)</string>
+    <string name="continue_btn">Continuar</string>
+    <string name="submit">Enviar</string>
+    <string name="save">Guardar</string>
+    <string name="back">Atrás</string>
+    <string name="history">Historial</string>
+    <string name="new_test">Nueva Evaluación</string>
+    <string name="start">Comenzar</string>
+    <string name="fill_mock_data">Llenar Datos de Prueba</string>
+    <string name="mock_data_success">¡Datos de prueba agregados exitosamente!</string>
+    <string name="dashboard_title">Panel de Terapeuta</string>
+    <string name="patient_list_title">Lista de Pacientes</string>
+    <string name="search_hint">Buscar por nombre o ID...</string>
+    <string name="score_label">Puntaje: %s</string>
+    <string name="interpretation_label">Interpretación: %s</string>
+    <string name="saved_msg">¡Guardado!</string>
+    <string name="save_error_msg">Error al guardar</string>
+    <string name="user_registration_title">Registro de Usuario</string>
+    <string name="assessment_results_title">Resultados de Evaluación</string>
+    <string name="available_tests_title">Evaluaciones Disponibles</string>
+    <string name="error_fill_all_fields">Por favor complete todos los campos</string>
+    <string name="error_gdpr_required">Debe aceptar los términos GDPR</string>
+    <string name="error_answer_all">Por favor responda todas las preguntas</string>
+    <string name="error_register_first">Por favor regístrese primero completando una prueba.</string>
+    <string name="error_invalid_qr">Código QR inválido</string>
+    <string name="error_cancelled">Cancelado</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="logout_confirm">¿Está seguro de que desea cerrar sesión?</string>
+
+    <string name="password_hint">PIN / Contraseña</string>
+    <string name="score_history_last_year">Historial de Puntaje - Último Año</string>
+
+    <!-- New Feature Strings -->
+    <string name="clinician_mode_superuser">Terapeuta : Superusuario</string>
+    <string name="invite_patient">Invitar Paciente (QR)</string>
+    <string name="scan_qr_to_connect">Código QR</string>
+    <string name="connect_therapist_title">Conectar con Terapeuta</string>
+    <string name="connect_success">¡Conectado exitosamente con el terapeuta!</string>
+    <string name="connect_fail">Error al conectar. QR inválido.</string>
+    <string name="score_history_title">Mi Progreso</string>
+    <string name="interpretation_title">Interpretación</string>
+    <string name="data_processing_title">Progreso del Paciente</string>
+    <string name="no_linked_patients">No hay pacientes vinculados. Usa el botón Invitar.</string>
+    <string name="scan_instruction">Escanee el código QR en la pantalla de su terapeuta</string>
+
+    <!-- Risk Levels -->
+    <string name="risk_severe">Severo</string>
+    <string name="risk_high">Alto Riesgo</string>
+    <string name="risk_moderate">Moderado</string>
+    <string name="risk_low">Bajo</string>
+    <string name="risk_unknown">Desconocido</string>
+    <string name="risk_completed">Completado</string>
+
+    <!-- PHQ-9 -->
+    <string name="phq9_title">Escala de Depresión (PHQ-9)</string>
+    <string name="phq9_desc">Evaluación de Severidad de Depresión</string>
+    <string-array name="phq9_items">
+        <item>Poco interés o placer en hacer cosas</item>
+        <item>Se ha sentido decaído(a), deprimido(a) o sin esperanzas</item>
+        <item>Ha tenido dificultad para quedarse o permanecer dormido(a), o ha dormido demasiado</item>
+        <item>Se ha sentido cansado(a) o con poca energía</item>
+        <item>Sin apetito o ha comido en exceso</item>
+        <item>Se ha sentido mal con usted mismo(a) – o que es un fracaso o que ha quedado mal con usted mismo(a) o con su familia</item>
+        <item>Ha tenido dificultad para concentrarse en ciertas cosas, tales como leer el periódico o ver la televisión</item>
+        <item>¿Se ha estado moviendo o hablando tan lentamente que otras personas podrían haberlo notado? O por el contrario – ¿ha estado tan inquieto(a) o agitado(a) que se ha estado moviendo mucho más de lo normal?</item>
+        <item>Pensamientos de que sería mejor estar muerto(a) o de lastimarse de alguna manera</item>
+    </string-array>
+    <string-array name="phq9_labels">
+        <item>Nunca</item>
+        <item>Varios días</item>
+        <item>Más de la mitad de los días</item>
+        <item>Casi todos los días</item>
+        <item>Diariamente</item>
+    </string-array>
+
+    <!-- GAD-7 -->
+    <string name="gad7_title">Escala de Ansiedad (GAD-7)</string>
+    <string name="gad7_desc">Evaluación de Ansiedad Generalizada</string>
+    <string-array name="gad7_items">
+        <item>Sentirse nervioso/a, ansioso/a o con los nervios de punta</item>
+        <item>No poder dejar de preocuparse o no poder controlar la preocupación</item>
+        <item>Preocuparse demasiado por diferentes cosas</item>
+        <item>Dificultad para relajarse</item>
+        <item>Estar tan inquieto/a que es difícil permanecer sentado/a</item>
+        <item>Molestarse o irritarse fácilmente</item>
+        <item>Tener miedo como si algo terrible fuera a pasar</item>
+    </string-array>
+
+    <!-- PID-5-BF -->
+    <string name="pid5bf_title">Inventario de Personalidad (PID-5-BF)</string>
+    <string name="pid5bf_desc">Inventario Breve de Personalidad (25 ítems)</string>
+    <string-array name="pid5bf_items">
+        <item>1. La gente me describiría como imprudente.</item>
+        <item>2. Siento que actúo totalmente por impulso.</item>
+        <item>3. Aunque les vuelva locos, intimido a la gente para que haga lo que yo quiero.</item>
+        <item>4. A menudo tengo que tratar con gente que es menos importante que yo.</item>
+        <item>5. A menudo invento cosas sobre mí para conseguir lo que quiero.</item>
+        <item>6. Me resulta fácil aprovecharme de los demás.</item>
+        <item>7. Me preocupo por casi todo.</item>
+        <item>8. A menudo me meto en peleas físicas.</item>
+        <item>9. A menudo siento que no tengo nada que decir a los demás.</item>
+        <item>10. Siempre estoy atento por si alguien intenta estafarme.</item>
+        <item>11. Úsalos o te usarán es mi lema.</item>
+        <item>12. A menudo siento que soy un alma a la deriva.</item>
+        <item>13. A menudo siento que no soy lo suficientemente bueno.</item>
+        <item>14. Suelo ser bastante hostil.</item>
+        <item>15. A menudo me siento vacío por dentro.</item>
+        <item>16. Puedo ser bastante malo con la gente.</item>
+        <item>17. A menudo estoy fuera de control.</item>
+        <item>18. A menudo siento que estoy en una niebla.</item>
+        <item>19. A menudo digo cosas que a los demás les parecen raras o extrañas.</item>
+        <item>20. Disfruto tomando riesgos.</item>
+        <item>21. Siento que nunca recibo lo que merezco.</item>
+        <item>22. A menudo me dicen que estoy distraído.</item>
+        <item>23. A menudo intento influir en los demás.</item>
+        <item>24. A menudo me meto en problemas porque no pienso antes de actuar.</item>
+        <item>25. A menudo siento que no tengo identidad.</item>
+    </string-array>
+
+    <!-- MSI-BPD -->
+    <string name="msibpd_title">Personalidad Límite (MSI-BPD)</string>
+    <string name="msibpd_desc">Evaluación para el Trastorno Límite de la Personalidad</string>
+    <string-array name="msibpd_items">
+        <item>1. ¿Han sido sus relaciones más cercanas problemáticas con muchas discusiones o rupturas repetidas?</item>
+        <item>2. ¿Se ha hecho daño físicamente a propósito?</item>
+        <item>3. ¿Tiene al menos otros dos problemas con la impulsividad?</item>
+        <item>4. ¿Ha estado extremadamente malhumorado?</item>
+        <item>5. ¿Se ha sentido muy enojado gran parte del tiempo?</item>
+        <item>6. ¿A menudo ha desconfiado de otras personas?</item>
+        <item>7. ¿Se ha sentido frecuentemente irreal o como si las cosas a su alrededor fueran irreales?</item>
+        <item>8. ¿Se ha sentido crónicamente vacío?</item>
+        <item>9. ¿Ha sentido a menudo que no tenía idea de quién es usted?</item>
+        <item>10. ¿Ha hecho esfuerzos desesperados para evitar ser abandonado?</item>
+    </string-array>
+    <string-array name="yes_no_options">
+        <item>No</item>
+        <item>Sí</item>
+    </string-array>
+
+    <!-- PQ-B -->
+    <string name="pqb_title">Detección de Psicosis (PQ-B)</string>
+    <string name="pqb_desc">Signos tempranos de Psicosis</string>
+    <string-array name="pqb_items">
+        <item>1. ¿Los entornos familiares a veces le parecen extraños?</item>
+        <item>2. ¿Ha escuchado sonidos inusuales como golpes o silbidos?</item>
+        <item>3. ¿Las cosas que ve parecen diferentes de lo habitual?</item>
+        <item>4. ¿Ha tenido experiencias con telepatía?</item>
+        <item>5. ¿Ha sentido que no tiene el control de sus propias ideas?</item>
+        <item>6. ¿Tiene fuertes sentimientos de ser inusualmente talentoso?</item>
+        <item>7. ¿Siente que otras personas lo están observando?</item>
+        <item>8. ¿A veces siente cosas extrañas en su cuerpo?</item>
+        <item>9. ¿A veces tiene sensaciones extrañas en su cuerpo?</item>
+        <item>10. ¿Ha sentido que no controla sus propios pensamientos?</item>
+        <item>11. ¿Ha visto cosas que otras personas no pueden ver?</item>
+        <item>12. ¿Escucha voces que otras personas no escuchan?</item>
+        <item>13. ¿Se confunde a veces si algo fue real o imaginario?</item>
+        <item>14. ¿Tiene creencias que otros encontrarían inusuales?</item>
+        <item>15. ¿Siente que otras personas le prestan atención?</item>
+        <item>16. ¿Siente que la gente está tratando de hacerle daño?</item>
+        <item>17. ¿Siente que tiene poderes especiales?</item>
+        <item>18. ¿Siente que sus pensamientos están siendo leídos?</item>
+        <item>19. ¿Siente que se le envían mensajes a través de la TV?</item>
+        <item>20. ¿Siente que es una persona especial?</item>
+        <item>21. ¿Siente que lo están siguiendo?</item>
+    </string-array>
+
+</resources>

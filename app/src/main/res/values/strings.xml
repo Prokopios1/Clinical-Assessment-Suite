@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clinical Assessment Suite</string>
+    <string name="patient_mode">User</string>
+    <string name="clinician_mode">Therapist</string>
+    <string name="welcome">Welcome to the Clinical Assessment Platform</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="gdpr_consent">I agree to data processing (GDPR)</string>
+    <string name="continue_btn">Continue</string>
+    <string name="submit">Submit</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="history">History</string>
+    <string name="new_test">New Assessment</string>
+    <string name="start">Start</string>
+    <string name="fill_mock_data">Fill Mock Data</string>
+    <string name="mock_data_success">Mock data added successfully!</string>
+    <string name="dashboard_title">Therapist Dashboard</string>
+    <string name="patient_list_title">Patient List</string>
+    <string name="search_hint">Search by name or ID...</string>
+    <string name="score_label">Score: %s</string>
+    <string name="interpretation_label">Interpretation: %s</string>
+    <string name="saved_msg">Saved!</string>
+    <string name="save_error_msg">Error saving</string>
+    <string name="user_registration_title">User Registration</string>
+    <string name="assessment_results_title">Assessment Results</string>
+    <string name="available_tests_title">Available Assessments</string>
+    <string name="error_fill_all_fields">Please fill all fields</string>
+    <string name="error_gdpr_required">You must agree to GDPR terms</string>
+    <string name="error_answer_all">Please answer all questions</string>
+    <string name="error_register_first">Please register first by taking an assessment.</string>
+    <string name="error_invalid_qr">Invalid QR Code</string>
+    <string name="error_cancelled">Cancelled</string>
+    <string name="logout">Logout</string>
+    <string name="logout_confirm">Are you sure you want to logout?</string>
+
+    <string name="password_hint">PIN / Password</string>
+    <string name="score_history_last_year">Score History - Last Year</string>
+
+    <!-- New Feature Strings -->
+    <string name="clinician_mode_superuser">Therapist : Superuser</string>
+    <string name="invite_patient">Invite Patient (QR)</string>
+    <string name="scan_qr_to_connect">QR</string>
+    <string name="connect_therapist_title">Connect to Therapist</string>
+    <string name="connect_success">Successfully connected to therapist!</string>
+    <string name="connect_fail">Failed to connect. Invalid QR.</string>
+    <string name="score_history_title">My Progress</string>
+    <string name="interpretation_title">Interpretation</string>
+    <string name="data_processing_title">Patient Progress</string>
+    <string name="no_linked_patients">No patients linked yet. Use the Invite button.</string>
+    <string name="scan_instruction">Scan the QR code on your therapist\'s screen</string>
+
+    <!-- Risk Levels -->
+    <string name="risk_severe">Severe</string>
+    <string name="risk_high">High Risk</string>
+    <string name="risk_moderate">Moderate</string>
+    <string name="risk_low">Low</string>
+    <string name="risk_unknown">Unknown</string>
+    <string name="risk_completed">Completed</string>
+
+    <!-- PHQ-9 -->
+    <string name="phq9_title">Depression Scale (PHQ-9)</string>
+    <string name="phq9_desc">Depression Severity Assessment</string>
+    <string-array name="phq9_items">
+        <item>Little interest or pleasure in doing things</item>
+        <item>Feeling down, depressed, or hopeless</item>
+        <item>Trouble falling or staying asleep, or sleeping too much</item>
+        <item>Feeling tired or having little energy</item>
+        <item>Poor appetite or overeating</item>
+        <item>Feeling bad about yourself - or that you are a failure or have let yourself or your family down</item>
+        <item>Trouble concentrating on things, such as reading the newspaper or watching television</item>
+        <item>Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual</item>
+        <item>Thoughts that you would be better off dead or of hurting yourself in some way</item>
+    </string-array>
+    <string-array name="phq9_labels">
+        <item>Not at all</item>
+        <item>Several days</item>
+        <item>More than half the days</item>
+        <item>Nearly every day</item>
+        <item>Daily</item>
+    </string-array>
+
+    <!-- GAD-7 -->
+    <string name="gad7_title">Anxiety Scale (GAD-7)</string>
+    <string name="gad7_desc">Generalized Anxiety Assessment</string>
+    <string-array name="gad7_items">
+        <item>Feeling nervous, anxious, or on edge</item>
+        <item>Not being able to stop or control worrying</item>
+        <item>Worrying too much about different things</item>
+        <item>Trouble relaxing</item>
+        <item>Being so restless that it is hard to sit still</item>
+        <item>Becoming easily annoyed or irritable</item>
+        <item>Feeling afraid as if something awful might happen</item>
+    </string-array>
+
+    <!-- PID-5-BF -->
+    <string name="pid5bf_title">Personality Inventory (PID-5-BF)</string>
+    <string name="pid5bf_desc">Brief Personality Inventory (25 items)</string>
+    <string-array name="pid5bf_items">
+        <item>People would describe me as reckless.</item>
+        <item>I feel like I act totally on impulse.</item>
+        <item>Even though it drives them crazy, I bully people into doing what I want.</item>
+        <item>I often have to deal with people who are less important than me.</item>
+        <item>I often make up things about myself to get what I want.</item>
+        <item>It is easy for me to take advantage of others.</item>
+        <item>I worry about almost everything.</item>
+        <item>I frequently get into physical fights.</item>
+        <item>I often feel like I have nothing to say to others.</item>
+        <item>I am always on the lookout for someone who is trying to scam me.</item>
+        <item>Use me or I use you is my motto.</item>
+        <item>I often feel like I am a drifting soul.</item>
+        <item>I often feel like I am not good enough.</item>
+        <item>I am usually pretty hostile.</item>
+        <item>I often feel empty inside.</item>
+        <item>I can be pretty mean to people.</item>
+        <item>I am often out of control.</item>
+        <item>I often feel like I am in a fog.</item>
+        <item>I often say things that others find odd or strange.</item>
+        <item>I enjoy taking risks.</item>
+        <item>I feel like I never get what I deserve.</item>
+        <item>I am often told that I am spaced out.</item>
+        <item>I often try to influence others.</item>
+        <item>I often get into trouble because I do not think before I act.</item>
+        <item>I often feel like I have no identity.</item>
+    </string-array>
+
+    <!-- MSI-BPD -->
+    <string name="msibpd_title">Borderline Personality (MSI-BPD)</string>
+    <string name="msibpd_desc">Assessment for Borderline Personality Disorder</string>
+    <string-array name="msibpd_items">
+        <item>Have your closest relationships been troubled by a lot of arguments or repeated breakups?</item>
+        <item>Have you deliberately hurt yourself physically (e.g., punched yourself, burned yourself, cut yourself, or tried to kill yourself)?</item>
+        <item>Do you have at least two other problems with impulsivity (e.g., eating binges and spending sprees, drinking too much and verbal outbursts)?</item>
+        <item>Have you been extremely moody?</item>
+        <item>Have you felt very angry a lot of the time? Or have you often acted in an angry or sarcastic manner?</item>
+        <item>Have you often been distrustful of other people?</item>
+        <item>Have you frequently felt unreal or as if things around you were unreal?</item>
+        <item>Have you chronically felt empty?</item>
+        <item>Have you often felt that you had no idea of who you are or that you have no identity?</item>
+        <item>Have you made desperate efforts to avoid being abandoned or left alone? (e.g., calling someone many times, begging them not to leave)</item>
+    </string-array>
+    <string-array name="yes_no_options">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <!-- PQ-B -->
+    <string name="pqb_title">Psychosis Screen (PQ-B)</string>
+    <string name="pqb_desc">Early signs of Psychosis</string>
+    <string-array name="pqb_items">
+        <item>Do familiar surroundings sometimes seem strange, confusing, threatening or unreal to you?</item>
+        <item>Have you heard unusual sounds like banging, clicking, hissing, clapping or ringing in your ears?</item>
+        <item>Do things that you see appear different from the way they usually do?</item>
+        <item>Have you had experiences with telepathy, psychic forces, or fortune telling?</item>
+        <item>Have you felt that you are not in control of your own ideas or thoughts?</item>
+        <item>Do you have strong feelings or beliefs about being unusually gifted or talented in some way?</item>
+        <item>Do you feel that other people are watching you or talking about you?</item>
+        <item>Do you sometimes feel strange things on or in your body?</item>
+        <item>Do you sometimes get strange feelings on or in your body?</item>
+        <item>Have you felt that you are not in control of your own ideas or thoughts?</item>
+        <item>Have you seen things that other people cannot see?</item>
+        <item>Do you hear voices that other people do not hear?</item>
+        <item>Do you get confused at times whether something you experienced was real or imaginary?</item>
+        <item>Do you hold beliefs that other people would find unusual or bizarre?</item>
+        <item>Do you feel that other people are paying attention to you or talking about you?</item>
+        <item>Do you feel that people are trying to harm you?</item>
+        <item>Do you feel that you have special powers?</item>
+        <item>Do you feel that your thoughts are being read by others?</item>
+        <item>Do you feel that messages are being sent to you through the TV or radio?</item>
+        <item>Do you feel that you are a special person?</item>
+        <item>Do you feel that you are being followed?</item>
+    </string-array>
+
+
+
+</resources>

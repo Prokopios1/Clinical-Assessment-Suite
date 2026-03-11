@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gad7_items">
+        <item>Feeling nervous, anxious, or on edge</item>
+        <item>Not being able to stop or control worrying</item>
+        <item>Worrying too much about different things</item>
+        <item>Trouble relaxing</item>
+        <item>Being so restless that it is hard to sit still</item>
+        <item>Becoming easily annoyed or irritable</item>
+        <item>Feeling afraid as if something awful might happen</item>
+    </string-array>
+    <string-array name="msibpd_items">
+        <item>Have your closest relationships been troubled by a lot of arguments or repeated breakups?</item>
+        <item>Have you deliberately hurt yourself physically (e.g., punched yourself, burned yourself, cut yourself, or tried to kill yourself)?</item>
+        <item>Do you have at least two other problems with impulsivity (e.g., eating binges and spending sprees, drinking too much and verbal outbursts)?</item>
+        <item>Have you been extremely moody?</item>
+        <item>Have you felt very angry a lot of the time? Or have you often acted in an angry or sarcastic manner?</item>
+        <item>Have you often been distrustful of other people?</item>
+        <item>Have you frequently felt unreal or as if things around you were unreal?</item>
+        <item>Have you chronically felt empty?</item>
+        <item>Have you often felt that you had no idea of who you are or that you have no identity?</item>
+        <item>Have you made desperate efforts to avoid being abandoned or left alone? (e.g., calling someone many times, begging them not to leave)</item>
+    </string-array>
+    <string-array name="phq9_items">
+        <item>Little interest or pleasure in doing things</item>
+        <item>Feeling down, depressed, or hopeless</item>
+        <item>Trouble falling or staying asleep, or sleeping too much</item>
+        <item>Feeling tired or having little energy</item>
+        <item>Poor appetite or overeating</item>
+        <item>Feeling bad about yourself - or that you are a failure or have let yourself or your family down</item>
+        <item>Trouble concentrating on things, such as reading the newspaper or watching television</item>
+        <item>Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual</item>
+        <item>Thoughts that you would be better off dead or of hurting yourself in some way</item>
+    </string-array>
+    <string-array name="phq9_labels">
+        <item>Not at all</item>
+        <item>Several days</item>
+        <item>More than half the days</item>
+        <item>Nearly every day</item>
+        <item>Daily</item>
+    </string-array>
+    <string-array name="pid5bf_items">
+        <item>People would describe me as reckless.</item>
+        <item>I feel like I act totally on impulse.</item>
+        <item>Even though it drives them crazy, I bully people into doing what I want.</item>
+        <item>I often have to deal with people who are less important than me.</item>
+        <item>I often make up things about myself to get what I want.</item>
+        <item>It is easy for me to take advantage of others.</item>
+        <item>I worry about almost everything.</item>
+        <item>I frequently get into physical fights.</item>
+        <item>I often feel like I have nothing to say to others.</item>
+        <item>I am always on the lookout for someone who is trying to scam me.</item>
+        <item>Use me or I use you is my motto.</item>
+        <item>I often feel like I am a drifting soul.</item>
+        <item>I often feel like I am not good enough.</item>
+        <item>I am usually pretty hostile.</item>
+        <item>I often feel empty inside.</item>
+        <item>I can be pretty mean to people.</item>
+        <item>I am often out of control.</item>
+        <item>I often feel like I am in a fog.</item>
+        <item>I often say things that others find odd or strange.</item>
+        <item>I enjoy taking risks.</item>
+        <item>I feel like I never get what I deserve.</item>
+        <item>I am often told that I am spaced out.</item>
+        <item>I often try to influence others.</item>
+        <item>I often get into trouble because I do not think before I act.</item>
+        <item>I often feel like I have no identity.</item>
+    </string-array>
+    <string-array name="pid5bf_labels">
+        <item>Very False or Often False</item>
+        <item>Sometimes or Somewhat False</item>
+        <item>Sometimes or Somewhat True</item>
+        <item>Very True or Often True</item>
+    </string-array>
+    <string-array name="pqb_items">
+        <item>Do familiar surroundings sometimes seem strange, confusing, threatening or unreal to you?</item>
+        <item>Have you heard unusual sounds like banging, clicking, hissing, clapping or ringing in your ears?</item>
+        <item>Do things that you see appear different from the way they usually do?</item>
+        <item>Have you had experiences with telepathy, psychic forces, or fortune telling?</item>
+        <item>Have you felt that you are not in control of your own ideas or thoughts?</item>
+        <item>Do you have strong feelings or beliefs about being unusually gifted or talented in some way?</item>
+        <item>Do you feel that other people are watching you or talking about you?</item>
+        <item>Do you sometimes feel strange things on or in your body?</item>
+        <item>Do you sometimes get strange feelings on or in your body?</item>
+        <item>Have you felt that you are not in control of your own ideas or thoughts?</item>
+        <item>Have you seen things that other people cannot see?</item>
+        <item>Do you hear voices that other people do not hear?</item>
+        <item>Do you get confused at times whether something you experienced was real or imaginary?</item>
+        <item>Do you hold beliefs that other people would find unusual or bizarre?</item>
+        <item>Do you feel that other people are paying attention to you or talking about you?</item>
+        <item>Do you feel that people are trying to harm you?</item>
+        <item>Do you feel that you have special powers?</item>
+        <item>Do you feel that your thoughts are being read by others?</item>
+        <item>Do you feel that messages are being sent to you through the TV or radio?</item>
+        <item>Do you feel that you are a special person?</item>
+        <item>Do you feel that you are being followed?</item>
+    </string-array>
+    <string-array name="yes_no_options">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    <color name="accent_gold">#FFD740</color>
+    <color name="background">#F8FAFD</color>
+    <color name="black">#FF000000</color>
+    <color name="error">#E53935</color>
+    <color name="info_sky">#4FC3F7</color>
+    <color name="on_background">#1A1C24</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_surface">#1A1C24</color>
+    <color name="on_surface_variant">#656E85</color>
+    <color name="primary">#2D5AF0</color>
+    <color name="primary_variant">#1A41CC</color>
+    <color name="purple_200">#7986CB</color>
+    <color name="purple_500">#3F51B5</color>
+    <color name="purple_700">#303F9F</color>
+    <color name="secondary">#FF5252</color>
+    <color name="secondary_variant">#D32F2F</color>
+    <color name="success">#43A047</color>
+    <color name="success_emerald">#00C853</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_elevated">#FFFFFF</color>
+    <color name="surface_variant">#EBEEF5</color>
+    <color name="teal_200">#80CBC4</color>
+    <color name="teal_700">#00796B</color>
+    <color name="text_hint">#A0AFC3</color>
+    <color name="text_primary">#1A1C24</color>
+    <color name="text_secondary">#656E85</color>
+    <color name="warning">#FB8C00</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Clinical Assessment Suite</string>
+    <string name="assessment_results_title">Assessment Results</string>
+    <string name="available_tests_title">Available Assessments</string>
+    <string name="back">Back</string>
+    <string name="clinician_mode">Therapist</string>
+    <string name="clinician_mode_superuser">Therapist : Superuser</string>
+    <string name="connect_fail">Failed to connect. Invalid QR.</string>
+    <string name="connect_success">Successfully connected to therapist!</string>
+    <string name="connect_therapist_title">Connect to Therapist</string>
+    <string name="continue_btn">Continue</string>
+    <string name="dashboard_title">Therapist Dashboard</string>
+    <string name="data_processing_title">Patient Progress</string>
+    <string name="email">Email</string>
+    <string name="error_answer_all">Please answer all questions</string>
+    <string name="error_cancelled">Cancelled</string>
+    <string name="error_fill_all_fields">Please fill all fields</string>
+    <string name="error_gdpr_required">You must agree to GDPR terms</string>
+    <string name="error_invalid_qr">Invalid QR Code</string>
+    <string name="error_register_first">Please register first by taking an assessment.</string>
+    <string name="fill_mock_data">Fill Mock Data</string>
+    <string name="gad7_desc">Generalized Anxiety Assessment</string>
+    <string name="gad7_mild_interp">Your score indicates mild anxiety. You may feel worried or on edge sometimes, but it does not severely impact your life. This is a common response to stress. Relaxation techniques, mindfulness, and monitoring your stress triggers can be helpful in preventing symptoms from escalating.</string>
+    <string name="gad7_minimal_interp">Your score indicates minimal or no anxiety. You appear to be managing stress well and are not currently experiencing significant symptoms of generalized anxiety. This suggests a healthy state of emotional balance where worry does not interfere with your daily life. Continue to employ your current coping mechanisms and maintain a balanced lifestyle.</string>
+    <string name="gad7_moderate_interp">Your score indicates moderate anxiety. Excessive worry and physical symptoms of anxiety (like restlessness or tension) may be interfering with your daily activities. Professional support or counseling (such as CBT) can provide effective strategies to manage these symptoms and improve your quality of life.</string>
+    <string name="gad7_severe_interp">Your score indicates severe anxiety. You are likely experiencing intense worry and physical symptoms that make daily life very difficult. It is important to seek help from a mental health professional immediately to develop a treatment plan, which may include therapy and/or medication.</string>
+    <string name="gad7_title">Anxiety Scale (GAD-7)</string>
+    <string name="gcm_defaultSenderId" translatable="false">527633236030</string>
+    <string name="gdpr_consent">I agree to data processing (GDPR)</string>
+    <string name="google_api_key" translatable="false">AIzaSyBvIlMcfSiyr72sqyp5TohnNNr-eLfhpJc</string>
+    <string name="google_app_id" translatable="false">1:527633236030:android:8419a70d4e26d67466916f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBvIlMcfSiyr72sqyp5TohnNNr-eLfhpJc</string>
+    <string name="google_storage_bucket" translatable="false">pa-clinical-assessment.firebasestorage.app</string>
+    <string name="history">History</string>
+    <string name="interpretation_label">Interpretation: %s</string>
+    <string name="interpretation_title">Interpretation</string>
+    <string name="invite_patient">Invite Patient (QR)</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="logout_confirm">Are you sure you want to logout?</string>
+    <string name="mock_data_success">Mock data added successfully!</string>
+    <string name="msibpd_desc">Assessment for Borderline Personality Disorder</string>
+    <string name="msibpd_high_interp">Your score is above the screening threshold, suggesting the possible presence of features associated with Borderline Personality Disorder (BPD). BPD is characterized by pervasive instability in moods, interpersonal relationships, self-image, and behavior. This high score indicates a need for a comprehensive evaluation by a qualified mental health professional to determine if a diagnosis is appropriate and to discuss treatment options such as Dialectical Behavior Therapy (DBT).</string>
+    <string name="msibpd_low_interp">Your score is below the screening threshold for Borderline Personality Disorder features. This suggests you do not report a significant number of traits associated with emotional instability, impulsivity, or relationship difficulties characteristic of BPD. However, if you are experiencing distress in these areas, professional consultation is still valid.</string>
+    <string name="msibpd_title">Borderline Personality (MSI-BPD)</string>
+    <string name="name">Full Name</string>
+    <string name="new_test">New Assessment</string>
+    <string name="no_linked_patients">No patients linked yet. Use the Invite button.</string>
+    <string name="password_hint">PIN / Password</string>
+    <string name="patient_list_title">Patient List</string>
+    <string name="patient_mode">User</string>
+    <string name="phq9_desc">Depression Severity Assessment</string>
+    <string name="phq9_mild_interp">Your score indicates mild depression. You may be experiencing some symptoms that affect your daily life, such as low mood, fatigue, or difficulty concentrating, but these are currently at a manageable level. This score suggests that while you are functioning, certain aspects of your life may feel more difficult than usual. Mild depression can often be addressed through lifestyle modifications and watchful waiting. Consider implementing a routine that includes regular exercise, balanced nutrition, and structured sleep hygiene, as these can significantly improve mood. Identifying and reducing sources of stress where possible is also beneficial. Connecting with supportive friends or family members can provide emotional relief. While professional treatment is not always immediately necessary for mild symptoms, monitoring your condition is crucial. If these feelings persist for more than two weeks or worsen, it would be advisable to consult a healthcare provider to explore further support options, such as counseling or therapy.</string>
+    <string name="phq9_minimal_interp">Your score indicates minimal or no depression. Use this result as a baseline for your mental well-being. This score reflects an absence of significant depressive symptoms over the last two weeks, suggesting that you are currently managing daily stressors effectively. You likely feel engaged in your usual activities, have stable sleep and appetite patterns, and maintain a generally positive outlook. While everyone experiences occasional sadness or low energy, your current state does not meet the clinical criteria for depression. It is important to continue practicing self-care strategies that support mental health, such as maintaining strong social connections, engaging in regular physical activity, and ensuring adequate rest. Being proactive about your emotional health can build resilience against future challenges. If you notice persistent changes in your mood or energy levels in the future, consider retaking this assessment or speaking with a professional. Remember that mental health fluctuates, and staying aware of your emotional state is a key part of overall wellness.</string>
+    <string name="phq9_mod_severe_interp">Your score indicates moderately severe depression. Your symptoms are likely causing significant distress and difficulty in managing work, home, or social responsibilities. You may be struggling with intense feelings of hopelessness, severe fatigue, or physical symptoms related to depression. This level of severity typically warrants active treatment. A combination of psychotherapy and medication is often the most effective approach for moderately severe depression. It is important to schedule an appointment with a mental health provider as soon as possible to develop a comprehensive treatment plan. You do not have to face this alone; professional support can provide the tools and medical care needed to improve your symptoms. Additionally, reach out to trusted friends or family members for support during this time. Prioritize your safety and well-being above other obligations until you feel more stable.</string>
+    <string name="phq9_moderate_interp">Your score indicates moderate depression. You are likely experiencing symptoms that are noticeably impacting your daily functioning and quality of life. This may include persistent sadness, reliable loss of interest in activities, changes in sleep or appetite, and feelings of fatigue or worthlessness. Moderate depression often requires a more structured intervention plan. It is highly recommended to consult with a mental health professional, such as a psychologist or psychiatrist, to discuss your symptoms. Treatment options typically include psychotherapy (talk therapy), which can help you develop coping strategies and address underlying issues. In some cases, medication may be considered depending on your specific needs and medical history. Ignoring these symptoms can lead to worsening of the condition, so taking proactive steps now is important. Remember, effective treatments are available, and seeking help is a sign of strength, not weakness.</string>
+    <string name="phq9_severe_interp">Your score indicates severe depression. This is a serious condition that significantly impacts almost all areas of daily functioning. You may be experiencing overwhelming sadness, complete loss of interest, physical exhaustion, or thoughts of self-harm. Immediate professional intervention is strongly alerted. Please contact a mental health professional, primary care doctor, or emergency services right away. Severe depression is a treatable medical condition, but it requires urgent and comprehensive care. Hospitalization or intensive outpatient programs may be considered to ensure your safety and provide rapid stabilization. Do not wait for symptoms to improve on their own. Reach out to a crisis line or go to the nearest emergency room if you feel unsafe. Recovery is possible with the right help.</string>
+    <string name="phq9_title">Depression Scale (PHQ-9)</string>
+    <string name="pid5bf_desc">Brief Personality Inventory (25 items)</string>
+    <string name="pid5bf_interp">The PID-5-BF assesses personality traits across five key domains: Negative Affectivity, Detachment, Antagonism, Disinhibition, and Psychoticism. \n\nNegative Affectivity reflects frequent and intense experiences of negative emotions such as anxiety, anger, or depression.\nDetachment involves withdrawal from others and restricted emotional experience.\nAntagonism is characterized by behaviors that put you at odds with others, such as grandiosity or deceitfulness.\nDisinhibition involves impulsivity and a lack of planning or consideration for consequences.\nPsychoticism involves unusual and culturally odd experiences or thoughts.\n\nTraits in these domains exist on a spectrum. High scores in specific areas may suggest personality patterns that can cause distress or interpersonal difficulties. Understanding your profile can be a powerful tool for personal growth and targeted therapy. A mental health professional can help interpret these results in the context of your life history.</string>
+    <string name="pid5bf_title">Personality Inventory (PID-5-BF)</string>
+    <string name="pqb_desc">Early signs of Psychosis</string>
+    <string name="pqb_high_interp">Your score reaches the screening threshold, suggesting you may be experiencing some meaningful distress or unusual thoughts/perceptions. This is a screening result, not a clinical diagnosis. It indicates that further assessment by a specialist is recommended to understand the nature of these experiences and whether they require intervention.</string>
+    <string name="pqb_low_interp">Your score is below the screening cutoff for psychosis risk. You reported few or no unusual experiences or thoughts. This suggests a low likelihood of psychosis-spectrum conditions at this time.</string>
+    <string name="pqb_title">Psychosis Screen (PQ-B)</string>
+    <string name="project_id" translatable="false">pa-clinical-assessment</string>
+    <string name="register">Register</string>
+    <string name="risk_completed">Completed</string>
+    <string name="risk_high">High Risk</string>
+    <string name="risk_low">Low</string>
+    <string name="risk_moderate">Moderate</string>
+    <string name="risk_severe">Severe</string>
+    <string name="risk_unknown">Unknown</string>
+    <string name="save">Save</string>
+    <string name="save_error_msg">Error saving</string>
+    <string name="saved_msg">Saved!</string>
+    <string name="scan_instruction">Scan the QR code on your therapist\'s screen</string>
+    <string name="scan_qr_to_connect">QR</string>
+    <string name="score_history_last_year">Score History - Last Year</string>
+    <string name="score_history_title">My Progress</string>
+    <string name="score_label">Score: %s</string>
+    <string name="search_hint">Search by name or ID...</string>
+    <string name="start">Start</string>
+    <string name="submit">Submit</string>
+    <string name="user_registration_title">User Registration</string>
+    <string name="welcome">Welcome to the Clinical Assessment Platform</string>
+    <style name="Theme.ClinicalAssessment" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        
+        
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

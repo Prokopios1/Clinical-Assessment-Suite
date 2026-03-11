@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium Brand Colors -->
+    <color name="primary">#2D5AF0</color> <!-- Vibrant Electric Blue -->
+    <color name="primary_variant">#1A41CC</color>
+    <color name="secondary">#FF5252</color> <!-- Radiant Coral/Red -->
+    <color name="secondary_variant">#D32F2F</color>
+    
+    <!-- Accent & Supporting -->
+    <color name="accent_gold">#FFD740</color>
+    <color name="success_emerald">#00C853</color>
+    <color name="info_sky">#4FC3F7</color>
+    
+    <!-- Backgrounds & Surfaces (Glassmorphism foundations) -->
+    <color name="background">#F8FAFD</color> <!-- Soft White -->
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#EBEEF5</color>
+    <color name="surface_elevated">#FFFFFF</color>
+    
+    <!-- Text Palette -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="text_primary">#1A1C24</color> <!-- Deep Graphite -->
+    <color name="text_secondary">#656E85</color> <!-- Slate Gray -->
+    <color name="text_hint">#A0AFC3</color>
+    
+    <!-- Common Material Tokens -->
+    <color name="on_surface">#1A1C24</color>
+    <color name="on_background">#1A1C24</color>
+    <color name="on_surface_variant">#656E85</color>
+    
+    <!-- Status -->
+    <color name="error">#E53935</color>
+    <color name="success">#43A047</color>
+    <color name="warning">#FB8C00</color>
+
+    <!-- Legacy / Compatibility -->
+    <color name="purple_200">#7986CB</color>
+    <color name="purple_500">#3F51B5</color>
+    <color name="purple_700">#303F9F</color>
+    <color name="teal_200">#80CBC4</color>
+    <color name="teal_700">#00796B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

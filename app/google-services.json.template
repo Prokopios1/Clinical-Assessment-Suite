@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "YOUR_PROJECT_NUMBER",
+    "project_id": "pa-clinical-assessment",
+    "storage_bucket": "pa-clinical-assessment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "YOUR_APP_ID",
+        "android_client_info": {
+          "package_name": "com.clinical.assessment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "YOUR_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

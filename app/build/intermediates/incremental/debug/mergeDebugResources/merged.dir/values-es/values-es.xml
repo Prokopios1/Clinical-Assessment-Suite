@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="gad7_items">
+        <item>Sentirse nervioso/a, ansioso/a o con los nervios de punta</item>
+        <item>No poder dejar de preocuparse o no poder controlar la preocupación</item>
+        <item>Preocuparse demasiado por diferentes cosas</item>
+        <item>Dificultad para relajarse</item>
+        <item>Estar tan inquieto/a que es difícil permanecer sentado/a</item>
+        <item>Molestarse o irritarse fácilmente</item>
+        <item>Tener miedo como si algo terrible fuera a pasar</item>
+    </string-array>
+    <string-array name="msibpd_items">
+        <item>1. ¿Han sido sus relaciones más cercanas problemáticas con muchas discusiones o rupturas repetidas?</item>
+        <item>2. ¿Se ha hecho daño físicamente a propósito?</item>
+        <item>3. ¿Tiene al menos otros dos problemas con la impulsividad?</item>
+        <item>4. ¿Ha estado extremadamente malhumorado?</item>
+        <item>5. ¿Se ha sentido muy enojado gran parte del tiempo?</item>
+        <item>6. ¿A menudo ha desconfiado de otras personas?</item>
+        <item>7. ¿Se ha sentido frecuentemente irreal o como si las cosas a su alrededor fueran irreales?</item>
+        <item>8. ¿Se ha sentido crónicamente vacío?</item>
+        <item>9. ¿Ha sentido a menudo que no tenía idea de quién es usted?</item>
+        <item>10. ¿Ha hecho esfuerzos desesperados para evitar ser abandonado?</item>
+    </string-array>
+    <string-array name="phq9_items">
+        <item>Poco interés o placer en hacer cosas</item>
+        <item>Se ha sentido decaído(a), deprimido(a) o sin esperanzas</item>
+        <item>Ha tenido dificultad para quedarse o permanecer dormido(a), o ha dormido demasiado</item>
+        <item>Se ha sentido cansado(a) o con poca energía</item>
+        <item>Sin apetito o ha comido en exceso</item>
+        <item>Se ha sentido mal con usted mismo(a) – o que es un fracaso o que ha quedado mal con usted mismo(a) o con su familia</item>
+        <item>Ha tenido dificultad para concentrarse en ciertas cosas, tales como leer el periódico o ver la televisión</item>
+        <item>¿Se ha estado moviendo o hablando tan lentamente que otras personas podrían haberlo notado? O por el contrario – ¿ha estado tan inquieto(a) o agitado(a) que se ha estado moviendo mucho más de lo normal?</item>
+        <item>Pensamientos de que sería mejor estar muerto(a) o de lastimarse de alguna manera</item>
+    </string-array>
+    <string-array name="phq9_labels">
+        <item>Nunca</item>
+        <item>Varios días</item>
+        <item>Más de la mitad de los días</item>
+        <item>Casi todos los días</item>
+        <item>Diariamente</item>
+    </string-array>
+    <string-array name="pid5bf_items">
+        <item>1. La gente me describiría como imprudente.</item>
+        <item>2. Siento que actúo totalmente por impulso.</item>
+        <item>3. Aunque les vuelva locos, intimido a la gente para que haga lo que yo quiero.</item>
+        <item>4. A menudo tengo que tratar con gente que es menos importante que yo.</item>
+        <item>5. A menudo invento cosas sobre mí para conseguir lo que quiero.</item>
+        <item>6. Me resulta fácil aprovecharme de los demás.</item>
+        <item>7. Me preocupo por casi todo.</item>
+        <item>8. A menudo me meto en peleas físicas.</item>
+        <item>9. A menudo siento que no tengo nada que decir a los demás.</item>
+        <item>10. Siempre estoy atento por si alguien intenta estafarme.</item>
+        <item>11. Úsalos o te usarán es mi lema.</item>
+        <item>12. A menudo siento que soy un alma a la deriva.</item>
+        <item>13. A menudo siento que no soy lo suficientemente bueno.</item>
+        <item>14. Suelo ser bastante hostil.</item>
+        <item>15. A menudo me siento vacío por dentro.</item>
+        <item>16. Puedo ser bastante malo con la gente.</item>
+        <item>17. A menudo estoy fuera de control.</item>
+        <item>18. A menudo siento que estoy en una niebla.</item>
+        <item>19. A menudo digo cosas que a los demás les parecen raras o extrañas.</item>
+        <item>20. Disfruto tomando riesgos.</item>
+        <item>21. Siento que nunca recibo lo que merezco.</item>
+        <item>22. A menudo me dicen que estoy distraído.</item>
+        <item>23. A menudo intento influir en los demás.</item>
+        <item>24. A menudo me meto en problemas porque no pienso antes de actuar.</item>
+        <item>25. A menudo siento que no tengo identidad.</item>
+    </string-array>
+    <string-array name="pqb_items">
+        <item>1. ¿Los entornos familiares a veces le parecen extraños?</item>
+        <item>2. ¿Ha escuchado sonidos inusuales como golpes o silbidos?</item>
+        <item>3. ¿Las cosas que ve parecen diferentes de lo habitual?</item>
+        <item>4. ¿Ha tenido experiencias con telepatía?</item>
+        <item>5. ¿Ha sentido que no tiene el control de sus propias ideas?</item>
+        <item>6. ¿Tiene fuertes sentimientos de ser inusualmente talentoso?</item>
+        <item>7. ¿Siente que otras personas lo están observando?</item>
+        <item>8. ¿A veces siente cosas extrañas en su cuerpo?</item>
+        <item>9. ¿A veces tiene sensaciones extrañas en su cuerpo?</item>
+        <item>10. ¿Ha sentido que no controla sus propios pensamientos?</item>
+        <item>11. ¿Ha visto cosas que otras personas no pueden ver?</item>
+        <item>12. ¿Escucha voces que otras personas no escuchan?</item>
+        <item>13. ¿Se confunde a veces si algo fue real o imaginario?</item>
+        <item>14. ¿Tiene creencias que otros encontrarían inusuales?</item>
+        <item>15. ¿Siente que otras personas le prestan atención?</item>
+        <item>16. ¿Siente que la gente está tratando de hacerle daño?</item>
+        <item>17. ¿Siente que tiene poderes especiales?</item>
+        <item>18. ¿Siente que sus pensamientos están siendo leídos?</item>
+        <item>19. ¿Siente que se le envían mensajes a través de la TV?</item>
+        <item>20. ¿Siente que es una persona especial?</item>
+        <item>21. ¿Siente que lo están siguiendo?</item>
+    </string-array>
+    <string-array name="yes_no_options">
+        <item>No</item>
+        <item>Sí</item>
+    </string-array>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d notificación nueva</item>
+    <item quantity="other">%d notificaciones nuevas</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Ir a inicio"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Desplazarse hacia arriba"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Más opciones"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Hecho"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Ver todo"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Seleccionar una aplicación"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"DESACTIVADO"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ACTIVADO"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Suprimir"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Intro"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Función +"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta +"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Mayús +"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"Espacio"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym +"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menú +"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Buscar…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Borrar consulta"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Consulta de búsqueda"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Buscar"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Búsqueda por voz"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Compartir con"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Compartir con <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Ocultar"</string>
+    <string msgid="8397015543330865059" name="android.credentials.TYPE_PASSWORD_CREDENTIAL">"Contraseña"</string>
+    <string msgid="3929015085059320822" name="androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL">"Llave de acceso"</string>
+    <string name="app_name">Clinical Assessment Suite</string>
+    <string name="assessment_results_title">Resultados de Evaluación</string>
+    <string name="available_tests_title">Evaluaciones Disponibles</string>
+    <string name="back">Atrás</string>
+    <string name="bottomsheet_action_collapse">Ocultar la hoja inferior</string>
+    <string name="bottomsheet_action_expand">Mostrar la hoja inferior</string>
+    <string name="bottomsheet_action_expand_halfway">Desplegar hasta la mitad</string>
+    <string name="bottomsheet_drag_handle_content_description">Controlador de arrastre</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Responder"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Vídeo"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Rechazar"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Colgar"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Llamada entrante"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Llamada en curso"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Filtrando una llamada entrante"</string>
+    <string name="character_counter_content_description">Caracteres introducidos: %1$d de %2$d</string>
+    <string name="character_counter_overflowed_content_description">Límite de caracteres superado (%1$d de %2$d)</string>
+    <string name="clear_text_end_icon_content_description">Borrar texto</string>
+    <string name="clinician_mode">Terapeuta</string>
+    <string name="clinician_mode_superuser">Terapeuta : Superusuario</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Habilitar</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s no funcionará hasta que no habilites Servicios de Google Play.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Habilita Servicios de Google Play</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Instalar</string>
+    <string name="common_google_play_services_install_text">%1$s no se ejecutará si los Servicios de Google Play no están instalados en tu dispositivo.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Descargar Servicios de Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Disponibilidad Servicios de Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Error de Servicios de Google Play</string>
+    <string name="common_google_play_services_unknown_issue">La aplicación %1$s tiene problemas con los Servicios de Google Play. Vuelve a intentarlo.</string>
+    <string name="common_google_play_services_unsupported_text">No es posible ejecutar la aplicación %1$s sin los Servicios de Google Play, que no son compatibles con tu dispositivo.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Actualizar</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s no funcionará hasta que no actualices Servicios de Google Play.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Actualiza Servicios de Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s no se ejecutará hasta que finalice la actualización en curso de Servicios de Google Play.</string>
+    <string name="common_google_play_services_wear_update_text">Se necesita una nueva versión de Servicios de Google Play. Se actualizará en breve.</string>
+    <string name="common_open_on_phone">Abrir en teléfono</string>
+    <string name="common_signin_button_text">Iniciar sesión</string>
+    <string name="common_signin_button_text_long">Iniciar sesión con Google</string>
+    <string name="connect_fail">Error al conectar. QR inválido.</string>
+    <string name="connect_success">¡Conectado exitosamente con el terapeuta!</string>
+    <string name="connect_therapist_title">Conectar con Terapeuta</string>
+    <string name="continue_btn">Continuar</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Enlace copiado en el portapapeles"</string>
+    <string name="dashboard_title">Panel de Terapeuta</string>
+    <string name="data_processing_title">Progreso del Paciente</string>
+    <string name="email">Email</string>
+    <string name="error_a11y_label">Error: no válida</string>
+    <string name="error_answer_all">Por favor responda todas las preguntas</string>
+    <string name="error_cancelled">Cancelado</string>
+    <string name="error_fill_all_fields">Por favor complete todos los campos</string>
+    <string name="error_gdpr_required">Debe aceptar los términos GDPR</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="error_invalid_qr">Código QR inválido</string>
+    <string name="error_register_first">Por favor regístrese primero completando una prueba.</string>
+    <string name="exposed_dropdown_menu_content_description">Mostrar menú desplegable</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copiar enlace"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Abrir en el navegador"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Compartir enlace"</string>
+    <string name="fill_mock_data">Llenar Datos de Prueba</string>
+    <string name="gad7_desc">Evaluación de Ansiedad Generalizada</string>
+    <string name="gad7_title">Escala de Ansiedad (GAD-7)</string>
+    <string name="gdpr_consent">Acepto el procesamiento de datos (GDPR)</string>
+    <string name="history">Historial</string>
+    <string name="icon_content_description">Icono del cuadro de diálogo</string>
+    <string name="interpretation_label">Interpretación: %s</string>
+    <string name="interpretation_title">Interpretación</string>
+    <string name="invite_patient">Invitar Paciente (QR)</string>
+    <string name="item_view_role_description">Pestaña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="logout_confirm">¿Está seguro de que desea cerrar sesión?</string>
+    <string name="m3_loading_indicator_content_description">Cargando</string>
+    <string name="material_clock_toggle_content_description">Selecciona AM o PM</string>
+    <string name="material_hour_24h_suffix">%1$s horas</string>
+    <string name="material_hour_selection">Seleccionar hora</string>
+    <string name="material_hour_suffix">%1$s en punto</string>
+    <string name="material_minute_selection">Seleccionar minutos</string>
+    <string name="material_minute_suffix">%1$s minutos</string>
+    <string name="material_slider_range_end">Fin del intervalo</string>
+    <string name="material_slider_range_start">Inicio del intervalo</string>
+    <string name="material_slider_value">Valor</string>
+    <string name="material_timepicker_am">a. m.</string>
+    <string name="material_timepicker_clock_mode_description">Cambia al modo de reloj para escribir la hora.</string>
+    <string name="material_timepicker_hour">Hora</string>
+    <string name="material_timepicker_minute">Minuto</string>
+    <string name="material_timepicker_pm">p. m.</string>
+    <string name="material_timepicker_select_time">Seleccionar la hora</string>
+    <string name="material_timepicker_text_input_mode_description">Cambia al modo de introducción de texto para escribir la hora.</string>
+    <string name="mock_data_success">¡Datos de prueba agregados exitosamente!</string>
+    <string name="msibpd_desc">Evaluación para el Trastorno Límite de la Personalidad</string>
+    <string name="msibpd_title">Personalidad Límite (MSI-BPD)</string>
+    <string name="mtrl_badge_numberless_content_description">Notificación nueva</string>
+    <string name="mtrl_checkbox_state_description_checked">Marcada</string>
+    <string name="mtrl_checkbox_state_description_indeterminate">Marcada parcialmente</string>
+    <string name="mtrl_checkbox_state_description_unchecked">Sin marcar</string>
+    <string name="mtrl_chip_close_icon_content_description">Retirar %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Más de %1$d notificaciones nuevas</string>
+    <string name="mtrl_picker_a11y_next_month">Cambiar al mes siguiente</string>
+    <string name="mtrl_picker_a11y_prev_month">Cambiar al mes anterior</string>
+    <string name="mtrl_picker_announce_current_range_selection">Selección de fecha de inicio: %1$s – Selección de fecha de finalización: %2$s</string>
+    <string name="mtrl_picker_announce_current_selection">Selección actual: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">ninguna</string>
+    <string name="mtrl_picker_cancel">Cancelar</string>
+    <string name="mtrl_picker_confirm">Aceptar</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Selecciona una fecha</string>
+    <string name="mtrl_picker_date_header_unselected">Fecha seleccionada</string>
+    <string name="mtrl_picker_day_of_week_column_header">%1$s</string>
+    <string name="mtrl_picker_end_date_description">Fecha de finalización: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Formato no válido.</string>
+    <string name="mtrl_picker_invalid_format_example">Ejemplo: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Usar: %1$s</string>
+    <string name="mtrl_picker_invalid_range">El periodo no es válido.</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Ir al año actual, %1$d</string>
+    <string name="mtrl_picker_navigate_to_year_description">Ir al año %1$d</string>
+    <string name="mtrl_picker_out_of_range">Fuera del periodo válido: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Fecha de inicio–%1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s–Fecha de finalización</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Selecciona un periodo</string>
+    <string name="mtrl_picker_range_header_unselected">Fecha de inicio–Fecha de finalización</string>
+    <string name="mtrl_picker_save">Guardar</string>
+    <string name="mtrl_picker_start_date_description">Fecha de inicio: %1$s</string>
+    <string name="mtrl_picker_text_input_date_hint">Fecha</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Fecha de finalización</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Fecha de inicio</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">a</string>
+    <string name="mtrl_picker_today_description">Hoy, %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Cambiar al modo de introducción Calendario</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Cambiar a la vista de calendario</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Cambiar al modo de introducción Texto</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Cambiar a la vista de año</string>
+    <string name="mtrl_picker_toggled_to_day_selection">Se ha cambiado a la vista de calendario</string>
+    <string name="mtrl_picker_toggled_to_year_selection">Se ha cambiado a la vista de año</string>
+    <string name="mtrl_timepicker_cancel">Cancelar</string>
+    <string name="mtrl_timepicker_confirm">Aceptar</string>
+    <string name="name">Nombre Completo</string>
+    <string name="new_test">Nueva Evaluación</string>
+    <string name="no_linked_patients">No hay pacientes vinculados. Usa el botón Invitar.</string>
+    <string name="password_hint">PIN / Contraseña</string>
+    <string name="password_toggle_content_description">Mostrar contraseña</string>
+    <string name="patient_list_title">Lista de Pacientes</string>
+    <string name="patient_mode">Usuario</string>
+    <string name="phq9_desc">Evaluación de Severidad de Depresión</string>
+    <string name="phq9_title">Escala de Depresión (PHQ-9)</string>
+    <string name="pid5bf_desc">Inventario Breve de Personalidad (25 ítems)</string>
+    <string name="pid5bf_title">Inventario de Personalidad (PID-5-BF)</string>
+    <string name="pqb_desc">Signos tempranos de Psicosis</string>
+    <string name="pqb_title">Detección de Psicosis (PQ-B)</string>
+    <string name="register">Registrarse</string>
+    <string name="risk_completed">Completado</string>
+    <string name="risk_high">Alto Riesgo</string>
+    <string name="risk_low">Bajo</string>
+    <string name="risk_moderate">Moderado</string>
+    <string name="risk_severe">Severo</string>
+    <string name="risk_unknown">Desconocido</string>
+    <string name="save">Guardar</string>
+    <string name="save_error_msg">Error al guardar</string>
+    <string name="saved_msg">¡Guardado!</string>
+    <string name="scan_instruction">Escanee el código QR en la pantalla de su terapeuta</string>
+    <string name="scan_qr_to_connect">Código QR</string>
+    <string name="score_history_last_year">Historial de Puntaje - Último Año</string>
+    <string name="score_history_title">Mi Progreso</string>
+    <string name="score_label">Puntaje: %s</string>
+    <string name="search_hint">Buscar por nombre o ID...</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Buscar"</string>
+    <string name="searchview_clear_text_content_description">Borrar texto</string>
+    <string name="searchview_navigation_content_description">Atrás</string>
+    <string name="side_sheet_accessibility_pane_title">Hoja lateral</string>
+    <string name="start">Comenzar</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="submit">Enviar</string>
+    <string name="user_registration_title">Registro de Usuario</string>
+    <string name="welcome">Bienvenido a la Plataforma de Evaluación Clínica</string>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">Lo sentimos, la cámara de Android ha encontrado un problema. Es posible que necesite reiniciar el dispositivo.</string>
+    <string name="zxing_msg_default_status">Coloque un código de barras en el interior del rectángulo del visor para escanear.</string>
+</resources>

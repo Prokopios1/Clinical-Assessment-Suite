@@ -1,0 +1,31 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+app/google-services.json
+
+# Build artifacts
+*.apk
+*.aab
+*.tar.gz
+*.jks
+*.pem
+
+# Logs
+*.log
+all_logs.txt
+logcat.txt
+testsprite_out.txt
+
+# Local SDKs and configs
+android-sdk/
+.agent/
+.vscode/
+.kotlin/
+TESTER_EMAIL_DRAFT.txt

@@ -1,0 +1,119 @@
+{
+    "assessments": {
+        "PHQ-9": {
+            "full_name": {
+                "en": "Patient Health Questionnaire-9",
+                "es": "Cuestionario sobre la salud del paciente-9",
+                "el": "Ερωτηματολόγιο Υγείας Ασθενούς-9"
+            },
+            "scoring": {
+                "formula": "Sum of all 9 items (0-3 scale)",
+                "range": [
+                    0,
+                    27
+                ],
+                "reverse_scored": []
+            },
+            "benchmarks": {
+                "median_50th_percentile": 2.0
+            },
+            "psychometrics": {
+                "cronbach_alpha": 0.89,
+                "reliability": 0.84,
+                "validity": 0.88
+            }
+        },
+        "GAD-7": {
+            "full_name": {
+                "en": "Generalized Anxiety Disorder-7",
+                "es": "Trastorno de Ansiedad Generalizada-7",
+                "el": "Διαταραχή Γενικευμένου Άγχους-7"
+            },
+            "scoring": {
+                "formula": "Sum of all 7 items (0-3 scale)",
+                "range": [
+                    0,
+                    21
+                ],
+                "reverse_scored": []
+            },
+            "benchmarks": {
+                "median_50th_percentile": 6.0
+            },
+            "psychometrics": {
+                "cronbach_alpha": 0.89,
+                "reliability": 0.83,
+                "validity": 0.89
+            }
+        },
+        "PID-5-BF": {
+            "full_name": {
+                "en": "Personality Inventory for DSM-5 Brief Form",
+                "es": "Inventario de personalidad para el formulario breve del DSM-5",
+                "el": "Απογραφή Προσωπικότητας για DSM-5 Σύντομη Φόρμα"
+            },
+            "scoring": {
+                "formula": "Sum of 25 items across 5 domains (0-3 scale)",
+                "range": [
+                    0,
+                    75
+                ],
+                "reverse_scored": []
+            },
+            "benchmarks": {
+                "median_50th_percentile": 15.0
+            },
+            "psychometrics": {
+                "cronbach_alpha": 0.83,
+                "reliability": 0.85,
+                "validity": 0.80
+            }
+        },
+        "MSI-BPD": {
+            "full_name": {
+                "en": "McLean Screening Instrument for Borderline Personality Disorder",
+                "es": "Instrumento de detección de McLean para el trastorno límite de la personalidad",
+                "el": "Εργαλείο διαλογής McLean για οριακή διαταραχή προσωπικότητας"
+            },
+            "scoring": {
+                "formula": "Sum of 10 items (Yes/No, 1/0)",
+                "range": [
+                    0,
+                    10
+                ],
+                "reverse_scored": []
+            },
+            "benchmarks": {
+                "median_50th_percentile": 2.0
+            },
+            "psychometrics": {
+                "cronbach_alpha": 0.74,
+                "reliability": 0.72,
+                "validity": 0.80
+            }
+        },
+        "PQ-B": {
+            "full_name": {
+                "en": "Prodromal Questionnaire-Brief",
+                "es": "Cuestionario Prodrómico Breve",
+                "el": "Πρόδρομο Ερωτηματολόγιο-Σύντομο"
+            },
+            "scoring": {
+                "formula": "Sum of 21 items (Yes/No, 1/0)",
+                "range": [
+                    0,
+                    21
+                ],
+                "reverse_scored": []
+            },
+            "benchmarks": {
+                "median_50th_percentile": 3.0
+            },
+            "psychometrics": {
+                "cronbach_alpha": 0.85,
+                "reliability": 0.85,
+                "validity": 0.80
+            }
+        }
+    }
+}

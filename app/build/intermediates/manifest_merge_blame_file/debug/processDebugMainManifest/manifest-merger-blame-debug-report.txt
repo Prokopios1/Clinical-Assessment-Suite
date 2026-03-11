@@ -1,0 +1,440 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.prokopios.clinicalassessment"
+4    android:versionCode="23"
+5    android:versionName="1.4.5" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:5:5-67
+11-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:6:5-79
+12-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+13-->[com.google.android.recaptcha:recaptcha:18.6.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/3203b82de2ddc708c1ff0bee7d4af5ed/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:9:5-98
+13-->[com.google.android.recaptcha:recaptcha:18.6.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/3203b82de2ddc708c1ff0bee7d4af5ed/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:9:22-95
+14
+15    <permission
+15-->[androidx.core:core:1.15.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/8b0f42dbb9573f9a7cc089411efec8a5/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+16        android:name="com.prokopios.clinicalassessment.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.15.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/8b0f42dbb9573f9a7cc089411efec8a5/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.15.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/8b0f42dbb9573f9a7cc089411efec8a5/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+18
+19    <uses-permission android:name="com.prokopios.clinicalassessment.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.15.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/8b0f42dbb9573f9a7cc089411efec8a5/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.15.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/8b0f42dbb9573f9a7cc089411efec8a5/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+20    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+20-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:22:5-65
+20-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:22:22-62
+21    <uses-feature
+21-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:25:5-27:36
+22        android:name="android.hardware.camera"
+22-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:26:9-47
+23        android:required="false" />
+23-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:27:9-33
+24    <uses-feature
+24-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:28:5-30:36
+25        android:name="android.hardware.camera.front"
+25-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:29:9-53
+26        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+26-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:30:9-33
+27    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+28    <uses-feature
+28-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:33:5-35:36
+29        android:name="android.hardware.camera.autofocus"
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:34:9-57
+30        android:required="false" />
+30-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:35:9-33
+31    <uses-feature
+31-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:36:5-38:36
+32        android:name="android.hardware.camera.flash"
+32-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:37:9-53
+33        android:required="false" />
+33-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:38:9-33
+34    <uses-feature
+34-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:39:5-41:36
+35        android:name="android.hardware.screen.landscape"
+35-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:40:9-57
+36        android:required="false" />
+36-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:41:9-33
+37    <uses-feature
+37-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:42:5-44:36
+38        android:name="android.hardware.wifi"
+38-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:43:9-45
+39        android:required="false" />
+39-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:44:9-33
+40
+41    <application
+41-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:8:5-45:19
+42        android:name="com.clinical.assessment.ClinicalApplication"
+42-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:9:9-44
+43        android:allowBackup="true"
+43-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:10:9-35
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.15.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/8b0f42dbb9573f9a7cc089411efec8a5/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+45        android:debuggable="true"
+46        android:extractNativeLibs="false"
+47        android:icon="@mipmap/ic_launcher"
+47-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:11:9-43
+48        android:label="@string/app_name"
+48-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:12:9-41
+49        android:supportsRtl="true"
+49-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:13:9-35
+50        android:theme="@style/Theme.ClinicalAssessment" >
+50-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:14:9-56
+51        <activity
+51-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:16:9-23:20
+52            android:name="com.clinical.assessment.MainActivity"
+52-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:17:13-41
+53            android:exported="true" >
+53-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:18:13-36
+54            <intent-filter>
+54-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:19:13-22:29
+55                <action android:name="android.intent.action.MAIN" />
+55-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:20:17-69
+55-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:20:25-66
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+57-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:21:17-77
+57-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:21:27-74
+58            </intent-filter>
+59        </activity>
+60        <activity
+60-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:25:9-34:20
+61            android:name="com.clinical.assessment.ui.patient.HomeActivity"
+61-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:26:13-52
+62            android:exported="true" >
+62-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:27:13-36
+63            <intent-filter>
+63-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:28:13-33:29
+64                <action android:name="android.intent.action.VIEW" />
+64-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:29:17-69
+64-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:29:25-66
+65
+66                <category android:name="android.intent.category.DEFAULT" />
+66-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:30:17-76
+66-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:30:27-73
+67                <category android:name="android.intent.category.BROWSABLE" />
+67-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:31:17-78
+67-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:31:27-75
+68
+69                <data
+69-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:32:17-74
+70                    android:host="connect"
+70-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:32:49-71
+71                    android:scheme="clinical" />
+71-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:32:23-48
+72            </intent-filter>
+73        </activity>
+74        <activity android:name="com.clinical.assessment.ui.patient.TestActivity" />
+74-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:35:9-61
+74-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:35:19-58
+75        <activity android:name="com.clinical.assessment.ui.patient.SummaryActivity" />
+75-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:36:9-64
+75-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:36:19-61
+76        <activity android:name="com.clinical.assessment.ui.patient.HistoryActivity" />
+76-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:37:9-64
+76-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:37:19-61
+77        <activity android:name="com.clinical.assessment.ui.patient.AboutAssessmentActivity" />
+77-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:38:9-72
+77-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:38:19-69
+78        <activity android:name="com.clinical.assessment.ui.auth.SignupActivity" />
+78-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:40:9-60
+78-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:40:19-57
+79        <activity android:name="com.clinical.assessment.ui.auth.PatientLoginActivity" />
+79-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:41:9-66
+79-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:41:19-63
+80        <activity android:name="com.clinical.assessment.ui.clinician.ClinicianLoginActivity" />
+80-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:42:9-73
+80-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:42:19-70
+81        <activity android:name="com.clinical.assessment.ui.clinician.DashboardActivity" />
+81-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:43:9-68
+81-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:43:19-65
+82        <activity android:name="com.clinical.assessment.ui.clinician.PatientDetailActivity" />
+82-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:44:9-72
+82-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:44:19-69
+83        <activity
+83-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:29:9-46:20
+84            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+84-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:30:13-80
+85            android:excludeFromRecents="true"
+85-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:31:13-46
+86            android:exported="true"
+86-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:32:13-36
+87            android:launchMode="singleTask"
+87-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:33:13-44
+88            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+88-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:34:13-72
+89            <intent-filter>
+89-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:35:13-45:29
+90                <action android:name="android.intent.action.VIEW" />
+90-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:29:17-69
+90-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:29:25-66
+91
+92                <category android:name="android.intent.category.DEFAULT" />
+92-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:30:17-76
+92-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:30:27-73
+93                <category android:name="android.intent.category.BROWSABLE" />
+93-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:31:17-78
+93-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:31:27-75
+94
+95                <data
+95-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:32:17-74
+96                    android:host="firebase.auth"
+96-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:32:49-71
+97                    android:path="/"
+98                    android:scheme="genericidp" />
+98-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:32:23-48
+99            </intent-filter>
+100        </activity>
+101        <activity
+101-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:47:9-64:20
+102            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+102-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:48:13-79
+103            android:excludeFromRecents="true"
+103-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:49:13-46
+104            android:exported="true"
+104-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:50:13-36
+105            android:launchMode="singleTask"
+105-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:51:13-44
+106            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+106-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:52:13-72
+107            <intent-filter>
+107-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:53:13-63:29
+108                <action android:name="android.intent.action.VIEW" />
+108-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:29:17-69
+108-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:29:25-66
+109
+110                <category android:name="android.intent.category.DEFAULT" />
+110-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:30:17-76
+110-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:30:27-73
+111                <category android:name="android.intent.category.BROWSABLE" />
+111-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:31:17-78
+111-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:31:27-75
+112
+113                <data
+113-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:32:17-74
+114                    android:host="firebase.auth"
+114-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:32:49-71
+115                    android:path="/"
+116                    android:scheme="recaptcha" />
+116-->/home/fupazuzi/clinical asessemnt/clinical_assessment_migration_20260221/app/src/main/AndroidManifest.xml:32:23-48
+117            </intent-filter>
+118        </activity>
+119
+120        <service
+120-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:66:9-72:19
+121            android:name="com.google.firebase.components.ComponentDiscoveryService"
+121-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:67:13-84
+122            android:directBootAware="true"
+122-->[com.google.firebase:firebase-common:22.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5ed3d66d8f6121191fa56da127506f40/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:32:13-43
+123            android:exported="false" >
+123-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:68:13-37
+124            <meta-data
+124-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:69:13-71:85
+125                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+125-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:70:17-109
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-auth:24.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ab4de1888c1f9cfbd0acf5ae080fd694/transformed/jetified-firebase-auth-24.0.1/AndroidManifest.xml:71:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-firestore:26.1.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/b260f1fcb4e710db2614ebfff6b49159/transformed/jetified-firebase-firestore-26.1.0/AndroidManifest.xml:17:13-19:85
+128                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+128-->[com.google.firebase:firebase-firestore:26.1.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/b260f1fcb4e710db2614ebfff6b49159/transformed/jetified-firebase-firestore-26.1.0/AndroidManifest.xml:18:17-122
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-firestore:26.1.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/b260f1fcb4e710db2614ebfff6b49159/transformed/jetified-firebase-firestore-26.1.0/AndroidManifest.xml:19:17-82
+130            <meta-data
+130-->[com.google.firebase:firebase-firestore:26.1.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/b260f1fcb4e710db2614ebfff6b49159/transformed/jetified-firebase-firestore-26.1.0/AndroidManifest.xml:20:13-22:85
+131                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+131-->[com.google.firebase:firebase-firestore:26.1.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/b260f1fcb4e710db2614ebfff6b49159/transformed/jetified-firebase-firestore-26.1.0/AndroidManifest.xml:21:17-111
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-firestore:26.1.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/b260f1fcb4e710db2614ebfff6b49159/transformed/jetified-firebase-firestore-26.1.0/AndroidManifest.xml:22:17-82
+133            <meta-data
+133-->[com.google.firebase:firebase-common:22.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5ed3d66d8f6121191fa56da127506f40/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:35:13-37:85
+134                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+134-->[com.google.firebase:firebase-common:22.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5ed3d66d8f6121191fa56da127506f40/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:36:17-109
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-common:22.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5ed3d66d8f6121191fa56da127506f40/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:37:17-82
+136        </service>
+137        <service
+137-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+138            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+138-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+139            android:enabled="true"
+139-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+140            android:exported="false" >
+140-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+141            <meta-data
+141-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+142                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+142-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+143                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+143-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+144        </service>
+145
+146        <activity
+146-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+147            android:name="androidx.credentials.playservices.HiddenActivity"
+147-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+148            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+148-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+149            android:enabled="true"
+149-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+150            android:exported="false"
+150-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+151            android:fitsSystemWindows="true"
+151-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+152            android:theme="@style/Theme.Hidden" >
+152-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/fupazuzi/.gradle/caches/8.11.1/transforms/f0d612f16e8cc484f4f2fb1434dbbcdf/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+153        </activity>
+154        <activity
+154-->[com.google.android.gms:play-services-auth:20.7.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cd65ebecf13246db646b07b00a1a86ab/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+155            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+155-->[com.google.android.gms:play-services-auth:20.7.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cd65ebecf13246db646b07b00a1a86ab/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+156            android:excludeFromRecents="true"
+156-->[com.google.android.gms:play-services-auth:20.7.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cd65ebecf13246db646b07b00a1a86ab/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+157            android:exported="false"
+157-->[com.google.android.gms:play-services-auth:20.7.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cd65ebecf13246db646b07b00a1a86ab/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+158            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+158-->[com.google.android.gms:play-services-auth:20.7.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cd65ebecf13246db646b07b00a1a86ab/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+159        <!--
+160            Service handling Google Sign-In user revocation. For apps that do not integrate with
+161            Google Sign-In, this service will never be started.
+162        -->
+163        <service
+163-->[com.google.android.gms:play-services-auth:20.7.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cd65ebecf13246db646b07b00a1a86ab/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+164            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+164-->[com.google.android.gms:play-services-auth:20.7.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cd65ebecf13246db646b07b00a1a86ab/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+165            android:exported="true"
+165-->[com.google.android.gms:play-services-auth:20.7.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cd65ebecf13246db646b07b00a1a86ab/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+166            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+166-->[com.google.android.gms:play-services-auth:20.7.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cd65ebecf13246db646b07b00a1a86ab/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+167            android:visibleToInstantApps="true" />
+167-->[com.google.android.gms:play-services-auth:20.7.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cd65ebecf13246db646b07b00a1a86ab/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+168
+169        <provider
+169-->[com.google.firebase:firebase-common:22.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5ed3d66d8f6121191fa56da127506f40/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:23:9-28:39
+170            android:name="com.google.firebase.provider.FirebaseInitProvider"
+170-->[com.google.firebase:firebase-common:22.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5ed3d66d8f6121191fa56da127506f40/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:24:13-77
+171            android:authorities="com.prokopios.clinicalassessment.firebaseinitprovider"
+171-->[com.google.firebase:firebase-common:22.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5ed3d66d8f6121191fa56da127506f40/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:25:13-72
+172            android:directBootAware="true"
+172-->[com.google.firebase:firebase-common:22.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5ed3d66d8f6121191fa56da127506f40/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:26:13-43
+173            android:exported="false"
+173-->[com.google.firebase:firebase-common:22.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5ed3d66d8f6121191fa56da127506f40/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:27:13-37
+174            android:initOrder="100" />
+174-->[com.google.firebase:firebase-common:22.0.1] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5ed3d66d8f6121191fa56da127506f40/transformed/jetified-firebase-common-22.0.1/AndroidManifest.xml:28:13-36
+175
+176        <activity
+176-->[com.google.android.gms:play-services-base:18.9.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/1d12af44fba1742a1f5bab0e95fd159f/transformed/jetified-play-services-base-18.9.0/AndroidManifest.xml:20:9-22:45
+177            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+177-->[com.google.android.gms:play-services-base:18.9.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/1d12af44fba1742a1f5bab0e95fd159f/transformed/jetified-play-services-base-18.9.0/AndroidManifest.xml:20:19-85
+178            android:exported="false"
+178-->[com.google.android.gms:play-services-base:18.9.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/1d12af44fba1742a1f5bab0e95fd159f/transformed/jetified-play-services-base-18.9.0/AndroidManifest.xml:22:19-43
+179            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+179-->[com.google.android.gms:play-services-base:18.9.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/1d12af44fba1742a1f5bab0e95fd159f/transformed/jetified-play-services-base-18.9.0/AndroidManifest.xml:21:19-78
+180
+181        <provider
+181-->[androidx.emoji2:emoji2:1.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5a80c02012c7e9755dce120b0ab1d050/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+182            android:name="androidx.startup.InitializationProvider"
+182-->[androidx.emoji2:emoji2:1.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5a80c02012c7e9755dce120b0ab1d050/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+183            android:authorities="com.prokopios.clinicalassessment.androidx-startup"
+183-->[androidx.emoji2:emoji2:1.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5a80c02012c7e9755dce120b0ab1d050/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+184            android:exported="false" >
+184-->[androidx.emoji2:emoji2:1.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5a80c02012c7e9755dce120b0ab1d050/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+185            <meta-data
+185-->[androidx.emoji2:emoji2:1.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5a80c02012c7e9755dce120b0ab1d050/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+186                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+186-->[androidx.emoji2:emoji2:1.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5a80c02012c7e9755dce120b0ab1d050/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+187                android:value="androidx.startup" />
+187-->[androidx.emoji2:emoji2:1.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/5a80c02012c7e9755dce120b0ab1d050/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+188            <meta-data
+188-->[androidx.lifecycle:lifecycle-process:2.10.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/06b963daa45669b0d17b684543f01d71/transformed/jetified-lifecycle-process-2.10.0/AndroidManifest.xml:29:13-31:52
+189                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+189-->[androidx.lifecycle:lifecycle-process:2.10.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/06b963daa45669b0d17b684543f01d71/transformed/jetified-lifecycle-process-2.10.0/AndroidManifest.xml:30:17-78
+190                android:value="androidx.startup" />
+190-->[androidx.lifecycle:lifecycle-process:2.10.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/06b963daa45669b0d17b684543f01d71/transformed/jetified-lifecycle-process-2.10.0/AndroidManifest.xml:31:17-49
+191            <meta-data
+191-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+192                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+192-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+193                android:value="androidx.startup" />
+193-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+194        </provider>
+195
+196        <meta-data
+196-->[com.google.android.gms:play-services-basement:18.9.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/4e4d12cc2269699a6b53526e9a603bb4/transformed/jetified-play-services-basement-18.9.0/AndroidManifest.xml:21:9-23:69
+197            android:name="com.google.android.gms.version"
+197-->[com.google.android.gms:play-services-basement:18.9.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/4e4d12cc2269699a6b53526e9a603bb4/transformed/jetified-play-services-basement-18.9.0/AndroidManifest.xml:22:13-58
+198            android:value="@integer/google_play_services_version" />
+198-->[com.google.android.gms:play-services-basement:18.9.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/4e4d12cc2269699a6b53526e9a603bb4/transformed/jetified-play-services-basement-18.9.0/AndroidManifest.xml:23:13-66
+199
+200        <receiver
+200-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+201            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+201-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+202            android:directBootAware="false"
+202-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+203            android:enabled="true"
+203-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+204            android:exported="true"
+204-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+205            android:permission="android.permission.DUMP" >
+205-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+206            <intent-filter>
+206-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+207                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+207-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+207-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+208            </intent-filter>
+209            <intent-filter>
+209-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+210                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+210-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+210-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+211            </intent-filter>
+212            <intent-filter>
+212-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+213                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+213-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+213-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+214            </intent-filter>
+215            <intent-filter>
+215-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+216                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+216-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+216-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/cb00e17951d9e36261bb3910802be3ad/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+217            </intent-filter>
+218        </receiver>
+219
+220        <activity
+220-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:47:9-53:63
+221            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+221-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:48:13-74
+222            android:clearTaskOnLaunch="true"
+222-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:49:13-45
+223            android:screenOrientation="sensorLandscape"
+223-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:50:13-56
+224            android:stateNotNeeded="true"
+224-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:51:13-42
+225            android:theme="@style/zxing_CaptureTheme"
+225-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:52:13-54
+226            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+226-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/fupazuzi/.gradle/caches/8.11.1/transforms/bd2ac9093a995ae0ea10d0a31a1c900f/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:53:13-60
+227        <activity
+227-->[com.google.android.play:core-common:2.0.3] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ddf5e254320d227d06074adf2dccbfa6/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:14:9-18:65
+228            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+228-->[com.google.android.play:core-common:2.0.3] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ddf5e254320d227d06074adf2dccbfa6/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:15:13-93
+229            android:exported="false"
+229-->[com.google.android.play:core-common:2.0.3] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ddf5e254320d227d06074adf2dccbfa6/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:16:13-37
+230            android:stateNotNeeded="true"
+230-->[com.google.android.play:core-common:2.0.3] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ddf5e254320d227d06074adf2dccbfa6/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:17:13-42
+231            android:theme="@style/Theme.PlayCore.Transparent" />
+231-->[com.google.android.play:core-common:2.0.3] /home/fupazuzi/.gradle/caches/8.11.1/transforms/ddf5e254320d227d06074adf2dccbfa6/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:18:13-62
+232    </application>
+233
+234</manifest>
